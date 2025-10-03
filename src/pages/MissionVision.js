@@ -21,11 +21,11 @@ const MissionVision = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-ps146-navy-50 via-white to-ps146-coral-50">
+      <section className="relative pt-24 pb-16 bg-white">
         {/* Decorative elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-navy-100/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-coral-100/15 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-navy-50 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-navy-50 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -41,7 +41,7 @@ const MissionVision = () => {
             <span className="block text-ps146-coral-600 font-extralight mt-2">& Vision</span>
           </h1>
           
-          <div className="w-24 h-1 bg-gradient-to-r from-ps146-coral-400 to-ps146-navy-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
           
           <p className="text-xl text-ps146-neutral-600 max-w-3xl mx-auto leading-relaxed">
             Discover the guiding principles that shape our educational philosophy and community at PS 146 Anna M. Short.
@@ -92,7 +92,7 @@ const MissionVision = () => {
             </div>
 
             {/* Leadership Information */}
-            <div className="bg-gradient-to-br from-ps146-coral-50 to-white p-10 rounded-3xl">
+            <div className="bg-white p-10 rounded-3xl border border-ps146-navy-100">
               <div className="flex items-center mb-8">
                 <UsersIcon className="h-8 w-8 text-ps146-navy-600 mr-4" />
                 <h2 className="text-2xl font-semibold text-ps146-navy-800">School Leadership</h2>
@@ -101,7 +101,7 @@ const MissionVision = () => {
               <div className="space-y-8">
                 <div className="bg-white p-6 rounded-2xl shadow-sm">
                   <div className="flex items-center mb-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-ps146-coral-500 to-ps146-coral-600 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-16 h-16 bg-ps146-coral-600 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white font-bold text-xl">MS</span>
                     </div>
                     <div>
@@ -116,7 +116,7 @@ const MissionVision = () => {
 
                 <div className="bg-white p-6 rounded-2xl shadow-sm">
                   <div className="flex items-center mb-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-ps146-navy-600 to-ps146-navy-800 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-16 h-16 bg-ps146-navy-700 rounded-full flex items-center justify-center mr-4">
                       <span className="text-white font-bold text-xl">DC</span>
                     </div>
                     <div>
@@ -147,7 +147,7 @@ const MissionVision = () => {
 
           <div className="bg-white rounded-3xl p-12 shadow-lg relative overflow-hidden">
             {/* Decorative accent */}
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-ps146-coral-500 to-ps146-navy-500"></div>
+            <div className="absolute top-0 left-0 w-full h-2 bg-ps146-coral-600"></div>
             
             <div className="relative">
               <div className="absolute -top-4 -left-4 text-ps146-coral-200 text-8xl font-bold opacity-30">"</div>
@@ -178,7 +178,7 @@ const MissionVision = () => {
             <h2 className="text-4xl font-light text-ps146-navy-900 mb-8">How We Achieve Excellence</h2>
           </div>
 
-          <div className="bg-gradient-to-br from-ps146-navy-50 to-ps146-coral-50 rounded-3xl p-12 shadow-lg relative">
+          <div className="bg-ps146-navy-50 rounded-3xl p-12 shadow-lg relative">
             {/* Decorative elements */}
             <div className="absolute top-8 right-8 w-24 h-24 bg-ps146-coral-200/30 rounded-full"></div>
             <div className="absolute bottom-8 left-8 w-16 h-16 bg-ps146-navy-200/30 rounded-full"></div>

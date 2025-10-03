@@ -58,10 +58,10 @@ const SchoolGoals = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-ps146-navy-50 via-white to-ps146-coral-50">
+      <section className="relative pt-24 pb-16 bg-white">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-navy-100/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-coral-100/15 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-navy-50 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-navy-50 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -77,7 +77,7 @@ const SchoolGoals = () => {
             <span className="block text-ps146-coral-600 font-extralight mt-2">Goals</span>
           </h1>
           
-          <div className="w-24 h-1 bg-gradient-to-r from-ps146-coral-400 to-ps146-navy-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
           
           <p className="text-xl text-ps146-neutral-600 max-w-3xl mx-auto leading-relaxed">
             Our strategic objectives guide our commitment to academic excellence, community engagement, and continuous improvement.
@@ -116,7 +116,7 @@ const SchoolGoals = () => {
                 count: "2 Goals"
               }
             ].map((area, index) => (
-              <div key={index} className="bg-gradient-to-br from-ps146-navy-50 to-ps146-coral-50 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300">
+              <div key={index} className="bg-ps146-navy-50 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-sm mb-6 mx-auto">
                   <area.icon className="h-8 w-8 text-ps146-coral-600" />
                 </div>
@@ -165,7 +165,7 @@ const SchoolGoals = () => {
                     {/* Goal Description */}
                     <div className="lg:col-span-8">
                       <div className="relative">
-                        <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-ps146-coral-400 to-ps146-navy-400 rounded-full lg:block hidden"></div>
+                        <div className="absolute -left-4 top-0 w-1 h-full bg-ps146-coral-500 rounded-full lg:block hidden"></div>
                         <p className="text-lg text-ps146-navy-700 leading-relaxed lg:pl-8">
                           {goal.description}
                         </p>
@@ -191,7 +191,7 @@ const SchoolGoals = () => {
       {/* Implementation Focus */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-ps146-navy-900 to-ps146-coral-800 rounded-3xl p-12 text-white relative overflow-hidden">
+          <div className="bg-ps146-navy-900 rounded-3xl p-12 text-white relative overflow-hidden">
             {/* Decorative elements */}
             <div className="absolute top-8 right-8 w-32 h-32 bg-white/10 rounded-full opacity-50"></div>
             <div className="absolute bottom-8 left-8 w-20 h-20 bg-white/10 rounded-full opacity-30"></div>

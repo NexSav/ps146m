@@ -20,10 +20,10 @@ const Admissions = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-ps146-coral-50 via-white to-ps146-navy-50">
+      <section className="relative pt-24 pb-16 bg-white">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-coral-100/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-navy-100/15 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-navy-50 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-navy-50 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -39,7 +39,7 @@ const Admissions = () => {
             <span className="block text-ps146-coral-600 font-extralight mt-2">Process</span>
           </h1>
           
-          <div className="w-24 h-1 bg-gradient-to-r from-ps146-coral-400 to-ps146-navy-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
           
           <p className="text-xl text-ps146-neutral-600 max-w-3xl mx-auto leading-relaxed">
             Welcome to PS 146 Anna M. Short! We're excited to help your child become part of our learning community.
@@ -52,13 +52,13 @@ const Admissions = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Key Information Card */}
-          <div className="bg-gradient-to-br from-ps146-navy-50 to-ps146-coral-50 rounded-3xl p-12 mb-16 relative overflow-hidden">
+          <div className="bg-ps146-navy-50 rounded-3xl p-12 mb-16 relative overflow-hidden">
             {/* Decorative elements */}
             <div className="absolute top-8 right-8 w-24 h-24 bg-ps146-coral-200/30 rounded-full"></div>
             <div className="absolute bottom-8 left-8 w-16 h-16 bg-ps146-navy-200/30 rounded-full"></div>
             
             <div className="relative z-10 text-center">
-              <div className="flex items-center justify-center w-20 h-20 bg-ps146-coral-600 rounded-2xl mx-auto mb-8">
+              <div className="flex items-center justifycenter w-20 h-20 bg-ps146-coral-600 rounded-2xl mx-auto mb-8">
                 <CheckCircleIcon className="h-10 w-10 text-white" />
               </div>
               

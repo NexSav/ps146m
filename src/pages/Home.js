@@ -11,6 +11,7 @@ import {
   TrophyIcon,
   ClockIcon
 } from '@heroicons/react/24/outline';
+import { GraduationCap, MessageSquareMore, IdCard, PiggyBank, CalendarDays as LucideCalendarDays, Megaphone } from 'lucide-react';
 
 const Home = () => {
   useEffect(() => {
@@ -65,7 +66,7 @@ const Home = () => {
                     <h1 className="text-7xl md:text-8xl lg:text-9xl font-thin text-white leading-none tracking-tight drop-shadow-2xl">
                       PS 146
                     </h1>
-                    <div className="w-24 h-1 bg-gradient-to-r from-ps146-coral-400 to-transparent mt-2 mb-6"></div>
+                    <div className="w-24 h-1 bg-ps146-coral-500 mt-2 mb-6"></div>
                   </div>
                   
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-extralight text-white/95 leading-tight drop-shadow-xl mb-3">
@@ -79,7 +80,7 @@ const Home = () => {
                 
                 {/* Description with elegant formatting */}
                 <div className="mb-12 relative">
-                  <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-ps146-coral-400 to-transparent rounded-full"></div>
+                  <div className="absolute left-0 top-0 w-1 h-full bg-ps146-coral-500 rounded-full"></div>
                   <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl pl-8 font-normal drop-shadow-lg">
                     Located in the heart of East Harlem, PS 146 Anna M. Short serves our diverse community with 
                     dedication, offering exceptional education from 8:00 AM to 3:00 PM, Monday through Friday.
@@ -88,9 +89,8 @@ const Home = () => {
                 
                 {/* Sophisticated button design */}
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <button className="group relative bg-ps146-coral-600 hover:bg-ps146-coral-700 text-white px-10 py-5 text-lg font-semibold rounded-2xl transition-all duration-400 transform hover:-translate-y-1 shadow-2xl hover:shadow-coral-500/25 overflow-hidden">
+                  <button className="group bg-ps146-coral-600 hover:bg-ps146-coral-700 text-white px-10 py-5 text-lg font-semibold rounded-2xl transition-all duration-400 transform hover:-translate-y-1 shadow-2xl">
                     <span className="relative z-10">Explore Our School</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-ps146-coral-500 to-ps146-coral-600 opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
                   </button>
                   <button className="group relative border-2 border-white/70 text-white hover:bg-white hover:text-ps146-navy-800 px-10 py-5 text-lg font-semibold rounded-2xl transition-all duration-400 backdrop-blur-sm hover:backdrop-blur-none overflow-hidden">
                     <span className="relative z-10">Leave a Message</span>
@@ -105,11 +105,39 @@ const Home = () => {
 
       {/* Quick Access Section - Real PS 146 Resources */}
       <section className="py-24 bg-white relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-ps146-navy-50/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-ps146-navy-50/30"></div>
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-light text-ps146-navy-900 mb-6">Quick Access</h2>
             <div className="w-20 h-0.5 bg-ps146-coral-600 mx-auto"></div>
+          </div>
+          {/* Round widgets row */}
+          <div className="mb-12">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center">
+              {[
+                { title: 'Google Classroom', href: 'https://classroom.google.com', icon: GraduationCap },
+                { title: 'Class Dojo', href: 'https://www.classdojo.com', icon: MessageSquareMore },
+                { title: 'NYC School Account', href: 'https://www.mystudent.nyc', icon: IdCard },
+                { title: 'SAVE For College', href: 'https://nyckidsrise.org/save-for-college-program/', icon: PiggyBank },
+                { title: 'Calendar', href: '/school-calendar', icon: LucideCalendarDays },
+                { title: 'Announcements', href: '/news', icon: Megaphone }
+              ].map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  target={item.href.startsWith('http') ? '_blank' : undefined}
+                  rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="group flex flex-col items-center text-center"
+                >
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white border border-ps146-navy-100 flex items-center justify-center text-ps146-coral-600 shadow-sm transition-colors duration-200 group-hover:bg-ps146-coral-600 group-hover:text-white">
+                    <item.icon className="w-7 h-7" />
+                  </div>
+                  <div className="mt-3 text-xs sm:text-sm font-medium text-ps146-navy-800 group-hover:text-ps146-coral-700 max-w-[8rem]">
+                    {item.title}
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -144,7 +172,7 @@ const Home = () => {
                 href={item.href} 
                 className="group relative bg-white hover:bg-ps146-navy-50 p-8 rounded-3xl shadow-sm hover:shadow-2xl border border-ps146-navy-100 hover:border-ps146-coral-200 transition-all duration-500 transform hover:-translate-y-2"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-ps146-coral-500/5 to-ps146-navy-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
                 <div className="relative">
                   <div className="w-12 h-12 bg-ps146-coral-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ps146-coral-200 transition-colors duration-300">
                     <item.icon className="h-6 w-6 text-ps146-coral-600" />
@@ -195,7 +223,7 @@ const Home = () => {
               {/* Hornets Achievement */}
               <div className="bg-white p-8 rounded-3xl shadow-sm mb-12">
                 <div className="flex items-center mb-4">
-                  <TrophyIcon className="h-8 w-8 text-yellow-500 mr-3" />
+                  <TrophyIcon className="h-8 w-8 text-ps146-gold-500 mr-3" />
                   <h3 className="text-2xl font-bold text-ps146-navy-800">Hornets Champions!</h3>
                 </div>
                 <p className="text-ps146-neutral-600 leading-relaxed">

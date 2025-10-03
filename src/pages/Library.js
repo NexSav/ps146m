@@ -21,10 +21,10 @@ const Library = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-ps146-navy-50 via-white to-ps146-coral-50">
+      <section className="relative pt-24 pb-16 bg-white">
         <div className="absolute inset-0">
-          <div className="absolute top-20 right-10 w-96 h-96 bg-ps146-navy-100/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-10 w-80 h-80 bg-ps146-coral-100/15 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-10 w-96 h-96 bg-ps146-navy-50 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-10 w-80 h-80 bg-ps146-navy-50 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -40,7 +40,7 @@ const Library = () => {
             <span className="block text-ps146-coral-600 font-extralight mt-2">Library Media Center</span>
           </h1>
           
-          <div className="w-24 h-1 bg-gradient-to-r from-ps146-coral-400 to-ps146-navy-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
           
           <p className="text-xl text-ps146-neutral-600 max-w-3xl mx-auto leading-relaxed">
             Developing independent learners and bridging the home and school community through our comprehensive library program.
@@ -51,7 +51,7 @@ const Library = () => {
       {/* Library Overview */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-ps146-navy-50 to-ps146-coral-50 rounded-3xl p-12 mb-16">
+          <div className="bg-ps146-navy-50 rounded-3xl p-12 mb-16">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-light text-ps146-navy-900 mb-6">Welcome to Our Library</h2>
               <div className="w-16 h-0.5 bg-ps146-coral-500 mx-auto mb-8"></div>
@@ -183,8 +183,8 @@ const Library = () => {
               }
             ].map((service, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
-                <div className={`w-16 h-16 bg-${service.color}-100 rounded-2xl flex items-center justify-center mb-6`}>
-                  <service.icon className={`h-8 w-8 text-${service.color}-600`} />
+              <div className={`w-16 h-16 bg-${service.color}-100 rounded-2xl flex items-center justify-center mb-6`}>
+                <service.icon className={`h-8 w-8 text-${service.color}-600`} />
                 </div>
                 <h3 className="text-lg font-semibold text-ps146-navy-800 mb-4">{service.title}</h3>
                 <p className="text-ps146-neutral-600 leading-relaxed">{service.description}</p>
@@ -197,7 +197,7 @@ const Library = () => {
       {/* Mission & Program */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-ps146-navy-900 to-ps146-coral-800 rounded-3xl p-12 text-white relative overflow-hidden">
+          <div className="bg-ps146-navy-900 rounded-3xl p-12 text-white relative overflow-hidden">
             {/* Decorative elements */}
             <div className="absolute top-8 right-8 w-32 h-32 bg-white/10 rounded-full opacity-50"></div>
             <div className="absolute bottom-8 left-8 w-20 h-20 bg-white/10 rounded-full opacity-30"></div>
@@ -223,7 +223,7 @@ const Library = () => {
                     "Community Connection"
                   ].map((goal, index) => (
                     <div key={index} className="text-center">
-                      <div className="w-2 h-2 bg-ps146-coral-300 rounded-full mx-auto mb-3"></div>
+                <div className="w-2 h-2 bg-ps146-coral-300 rounded-full mx-auto mb-3"></div>
                       <p className="text-white font-medium">{goal}</p>
                     </div>
                   ))}

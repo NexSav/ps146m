@@ -17,10 +17,10 @@ const PrincipalMessage = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 bg-gradient-to-br from-ps146-coral-50 via-white to-ps146-navy-50">
+      <section className="relative pt-24 pb-16 bg-white">
         <div className="absolute inset-0">
-          <div className="absolute top-20 right-10 w-96 h-96 bg-ps146-coral-100/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-10 w-80 h-80 bg-ps146-navy-100/15 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-10 w-96 h-96 bg-ps146-navy-50 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-10 w-80 h-80 bg-ps146-navy-50 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -36,7 +36,7 @@ const PrincipalMessage = () => {
             <span className="block text-ps146-coral-600 font-extralight mt-2">Our Principal</span>
           </h1>
           
-          <div className="w-24 h-1 bg-gradient-to-r from-ps146-coral-400 to-ps146-navy-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
         </div>
       </section>
 
@@ -47,9 +47,9 @@ const PrincipalMessage = () => {
             
             {/* Principal Photo & Info */}
             <div className="lg:col-span-1">
-              <div className="bg-gradient-to-br from-ps146-navy-50 to-ps146-coral-50 p-8 rounded-3xl shadow-lg sticky top-32">
+              <div className="bg-ps146-navy-50 p-8 rounded-3xl shadow-lg sticky top-32">
                 <div className="text-center mb-8">
-                  <div className="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-ps146-coral-200 to-ps146-navy-200 rounded-3xl flex items-center justify-center shadow-lg">
+                  <div className="w-48 h-48 mx-auto mb-6 bg-ps146-navy-100 rounded-3xl flex items-center justify-center shadow-lg">
                     <div className="w-44 h-44 bg-white rounded-2xl flex items-center justify-center">
                       <img 
                         src="http://ps146.org/wp-content/uploads/2015/12/Dr.-Mona-Silfen-1-610x1024.jpg" 
@@ -60,8 +60,8 @@ const PrincipalMessage = () => {
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
-                      <div className="w-40 h-40 bg-ps146-coral-100 rounded-xl items-center justify-center hidden">
-                        <UserIcon className="h-16 w-16 text-ps146-coral-600" />
+                      <div className="w-40 h-40 bg-ps146-navy-100 rounded-xl items-center justify-center hidden">
+                        <UserIcon className="h-16 w-16 text-ps146-navy-600" />
                       </div>
                     </div>
                   </div>

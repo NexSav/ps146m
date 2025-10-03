@@ -38,7 +38,7 @@ const Navbar = () => {
       ]
     },
     {
-      name: 'L.M.C.',
+      name: 'School Library',
       href: '/library',
       dropdown: [
         { name: 'Library Media Center', href: '/library', description: 'Discover what our library has to offer' },
@@ -85,11 +85,11 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       isScrolled 
-        ? 'bg-gradient-to-r from-white/98 to-ps146-navy-50/95 backdrop-blur-lg shadow-xl border-b border-ps146-coral-200/30' 
-        : 'bg-gradient-to-r from-white/95 to-ps146-navy-50/90 backdrop-blur-md shadow-md'
+        ? 'bg-white/95 backdrop-blur-lg shadow-xl border-b border-ps146-navy-100' 
+        : 'bg-white/90 backdrop-blur-md shadow-md'
     }`}>
       {/* Top accent line */}
-      <div className={`h-1 bg-gradient-to-r from-ps146-coral-500 via-ps146-navy-600 to-ps146-coral-500 transition-opacity duration-500 ${
+      <div className={`h-1 bg-ps146-gold-500 transition-opacity duration-500 ${
         isScrolled ? 'opacity-100' : 'opacity-60'
       }`}></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,14 +97,13 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-4 group">
             <div className="relative transform group-hover:scale-105 transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-ps146-navy-700 to-ps146-navy-900 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:from-ps146-navy-600 group-hover:to-ps146-navy-800 transition-all duration-300">
+              <div className="w-12 h-12 bg-ps146-navy-800 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
                 <span className="text-white font-bold text-lg group-hover:scale-110 transition-transform duration-300">146</span>
               </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-ps146-coral-400 to-ps146-coral-600 rounded-full animate-pulse"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-ps146-coral-500/20 to-ps146-navy-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-ps146-gold-500 rounded-full animate-pulse"></div>
             </div>
             <div className="hidden sm:block">
-              <div className="text-xl font-bold bg-gradient-to-r from-ps146-navy-800 to-ps146-navy-600 bg-clip-text text-transparent tracking-tight group-hover:from-ps146-coral-600 group-hover:to-ps146-navy-700 transition-all duration-300">PS 146</div>
+              <div className="text-xl font-bold text-ps146-navy-800 tracking-tight transition-colors duration-300">PS 146</div>
               <div className="text-sm font-medium text-ps146-coral-600 -mt-1 group-hover:text-ps146-coral-700 transition-colors duration-300">Anna M. Short</div>
             </div>
           </Link>
@@ -116,7 +115,7 @@ const Navbar = () => {
                 {item.dropdown ? (
                   <div>
                     <button
-                      className="flex items-center px-4 py-2 text-sm font-medium text-ps146-navy-700 hover:text-ps146-coral-600 rounded-lg hover:bg-gradient-to-r hover:from-ps146-coral-50 hover:to-ps146-navy-50 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-sm"
+                      className="flex items-center px-4 py-2 text-sm font-medium text-ps146-navy-700 hover:text-ps146-coral-600 rounded-lg hover:bg-ps146-navy-50 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-sm"
                       onMouseEnter={() => setActiveDropdown(index)}
                     >
                       {item.name}
@@ -126,7 +125,7 @@ const Navbar = () => {
                     {/* Mega Menu Dropdown */}
                     {activeDropdown === index && (
                       <div 
-                        className="absolute top-full left-0 mt-3 w-80 bg-gradient-to-br from-white to-ps146-navy-50/50 shadow-2xl border border-ps146-coral-200/30 rounded-2xl py-6 z-50 animate-slide-up backdrop-blur-sm"
+                        className="absolute top-full left-0 mt-3 w-80 bg-white shadow-2xl border border-ps146-navy-100 rounded-2xl py-6 z-50 animate-slide-up backdrop-blur-sm"
                         onMouseLeave={() => setActiveDropdown(null)}
                         style={{
                           animation: 'slideUp 0.3s ease-out'
@@ -137,7 +136,7 @@ const Navbar = () => {
                             <Link
                               key={dropdownIndex}
                               to={dropdownItem.href}
-                              className="block p-4 rounded-xl hover:bg-gradient-to-r hover:from-ps146-coral-50 hover:to-ps146-navy-50 transition-all duration-300 group transform hover:-translate-y-0.5"
+                              className="block p-4 rounded-xl hover:bg-ps146-navy-50 transition-all duration-300 group transform hover:-translate-y-0.5"
                             >
                               <div className="font-semibold text-ps146-navy-800 group-hover:text-ps146-coral-700 mb-1">
                                 {dropdownItem.name}
@@ -156,8 +155,8 @@ const Navbar = () => {
                     to={item.href}
                     className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-sm ${
                       location.pathname === item.href
-                        ? 'bg-gradient-to-r from-ps146-coral-100 to-ps146-coral-50 text-ps146-coral-700 shadow-sm'
-                        : 'text-ps146-navy-700 hover:text-ps146-coral-600 hover:bg-gradient-to-r hover:from-ps146-coral-50 hover:to-ps146-navy-50'
+                        ? 'bg-ps146-coral-50 text-ps146-coral-700 shadow-sm'
+                        : 'text-ps146-navy-700 hover:text-ps146-coral-600 hover:bg-ps146-navy-50'
                     }`}
                   >
                     {item.name}
@@ -186,7 +185,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-gradient-to-b from-white/98 to-ps146-navy-50/95 backdrop-blur-lg border-t border-ps146-coral-200/30 shadow-xl">
+        <div className="lg:hidden bg-white backdrop-blur-lg border-t border-ps146-navy-100 shadow-xl">
           <div className="px-4 pt-4 pb-4 space-y-2 max-h-96 overflow-y-auto">
             {navItems.map((item, index) => (
               <div key={index}>
