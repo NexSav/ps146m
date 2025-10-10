@@ -10,9 +10,7 @@ import {
   CameraIcon,
   TrophyIcon,
   ClockIcon,
-  ArrowRightIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon
+  ArrowRightIcon
 } from '@heroicons/react/24/outline';
 import { GraduationCap, MessageSquareMore, IdCard, PiggyBank, CalendarDays as LucideCalendarDays, Megaphone, ShieldCheck } from 'lucide-react';
 
@@ -373,7 +371,7 @@ const Home = () => {
                 <p className="text-ps146-neutral-600 mb-6 leading-relaxed">
                   Explore our digital collection of interactive books and educational resources.
                 </p>
-                <a href="#" className="inline-flex items-center text-ps146-coral-600 font-semibold hover:gap-2 transition-all">
+                <a href="/lmc" className="inline-flex items-center text-ps146-coral-600 font-semibold hover:gap-2 transition-all">
                   Explore Now
                   <ArrowRightIcon className="ml-1 h-4 w-4" />
                 </a>
@@ -389,7 +387,7 @@ const Home = () => {
                 <p className="text-ps146-neutral-600 mb-6 leading-relaxed">
                   Stay informed with the latest updates from the NYC Department of Education.
                 </p>
-                <a href="#" className="inline-flex items-center text-ps146-coral-600 font-semibold hover:gap-2 transition-all">
+                <a href="https://www.schools.nyc.gov" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-ps146-coral-600 font-semibold hover:gap-2 transition-all">
                   Read Updates
                   <ArrowRightIcon className="ml-1 h-4 w-4" />
                 </a>

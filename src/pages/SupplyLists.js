@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import {
   DocumentTextIcon,
-  ArrowDownTrayIcon,
-  AcademicCapIcon
+  ArrowDownTrayIcon
 } from '@heroicons/react/24/outline';
 
 const SupplyLists = () => {

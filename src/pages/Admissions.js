@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
-import { 
+import {
   CheckCircleIcon,
   EnvelopeIcon,
   PhoneIcon,
   MapPinIcon,
   AcademicCapIcon,
-  UserPlusIcon,
   ClipboardDocumentCheckIcon
 } from '@heroicons/react/24/outline';
 

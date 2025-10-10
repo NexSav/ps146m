@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import {
   ClockIcon,
-  ArrowLeftIcon,
   HomeIcon,
   EnvelopeIcon
 } from '@heroicons/react/24/outline';
