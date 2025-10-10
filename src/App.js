@@ -5,7 +5,9 @@ import MissionVision from './pages/MissionVision';
 import PrincipalMessage from './pages/PrincipalMessage';
 import SchoolGoals from './pages/SchoolGoals';
 import Library from './pages/Library';
+import LMC from './pages/LMC';
 import Admissions from './pages/Admissions';
+import SupplyLists from './pages/SupplyLists';
 import './App.css';
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
           <Route path="/principal-message" element={<PrincipalMessage />} />
           <Route path="/school-goals" element={<SchoolGoals />} />
           <Route path="/library" element={<Library />} />
+          <Route path="/lmc" element={<LMC />} />
           <Route path="/admissions" element={<Admissions />} />
+          <Route path="/supply-lists" element={<SupplyLists />} />
           {/* Additional routes can be added here as new pages are created */}
         </Routes>
       </div>

@@ -11,7 +11,7 @@ import {
   TrophyIcon,
   ClockIcon
 } from '@heroicons/react/24/outline';
-import { GraduationCap, MessageSquareMore, IdCard, PiggyBank, CalendarDays as LucideCalendarDays, Megaphone } from 'lucide-react';
+import { GraduationCap, MessageSquareMore, IdCard, PiggyBank, CalendarDays as LucideCalendarDays, Megaphone, ShieldCheck } from 'lucide-react';
 
 const Home = () => {
   useEffect(() => {
@@ -82,8 +82,8 @@ const Home = () => {
                 <div className="mb-12 relative">
                   <div className="absolute left-0 top-0 w-1 h-full bg-ps146-coral-500 rounded-full"></div>
                   <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl pl-8 font-normal drop-shadow-lg">
-                    Located in the heart of East Harlem, PS 146 Anna M. Short serves our diverse community with 
-                    dedication, offering exceptional education from 8:00 AM to 3:00 PM, Monday through Friday.
+                    Located in the heart of East Harlem, PS 146 Anna M. Short serves our diverse community with
+                    dedication, offering exceptional education from 8:00 AM to 2:20 PM, Monday through Friday.
                   </p>
                 </div>
                 
@@ -113,11 +113,12 @@ const Home = () => {
           </div>
           {/* Round widgets row */}
           <div className="mb-12">
-            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-items-center">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 justify-items-center">
               {[
                 { title: 'Google Classroom', href: 'https://classroom.google.com', icon: GraduationCap },
                 { title: 'Class Dojo', href: 'https://www.classdojo.com', icon: MessageSquareMore },
-                { title: 'NYC School Account', href: 'https://www.mystudent.nyc', icon: IdCard },
+                { title: 'NYC Schools Account', href: 'https://www.schoolsaccount.nyc/', icon: IdCard },
+                { title: 'Student Safety', href: '/student-safety', icon: ShieldCheck },
                 { title: 'SAVE For College', href: 'https://nyckidsrise.org/save-for-college-program/', icon: PiggyBank },
                 { title: 'Calendar', href: '/school-calendar', icon: LucideCalendarDays },
                 { title: 'Announcements', href: '/news', icon: Megaphone }
@@ -160,9 +161,9 @@ const Home = () => {
                 icon: CameraIcon,
                 description: "Spirit Day pictures & more"
               },
-              { 
-                title: "Supply Lists 2024-2025", 
-                href: "/supply-lists", 
+              {
+                title: "Supply Lists 2025-2026",
+                href: "/supply-lists",
                 icon: DocumentTextIcon,
                 description: "School year supply requirements"
               }
@@ -280,12 +281,12 @@ const Home = () => {
                 421 E. 106th Street, New York, NY 10029
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-2xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
                 <div className="flex items-center justify-center">
                   <ClockIcon className="w-6 h-6 text-ps146-coral-500 mr-3" />
                   <div>
                     <p className="font-semibold text-ps146-navy-800">School Hours</p>
-                    <p className="text-ps146-neutral-600">Mon-Fri 8:00AM-3:00PM</p>
+                    <p className="text-ps146-neutral-600">Mon-Fri 8:00AM-2:20PM</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
@@ -293,6 +294,13 @@ const Home = () => {
                   <div>
                     <p className="font-semibold text-ps146-navy-800">Main Office</p>
                     <p className="text-ps146-neutral-600">(212) 860-5877</p>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <PhoneIcon className="w-6 h-6 text-ps146-coral-500 mr-3" />
+                  <div>
+                    <p className="font-semibold text-ps146-navy-800">Fax</p>
+                    <p className="text-ps146-neutral-600">(212) 860-6078</p>
                   </div>
                 </div>
               </div>
