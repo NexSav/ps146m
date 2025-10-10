@@ -20,29 +20,27 @@ const Library = () => {
     <main className="bg-white min-h-screen">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative pt-24 pb-16 bg-white">
+      {/* Hero Section - Enhanced */}
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ps146-navy-900 via-ps146-navy-800 to-ps146-navy-900 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 right-10 w-96 h-96 bg-ps146-navy-50 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-10 w-80 h-80 bg-ps146-navy-50 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-coral-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-coral-500/10 rounded-full blur-3xl"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
-            <span className="inline-flex items-center bg-ps146-coral-600 text-white px-6 py-3 text-sm font-semibold uppercase tracking-wider rounded-full">
-              <BookOpenIcon className="h-4 w-4 mr-2" />
+            <span className="inline-block text-ps146-coral-400 text-sm font-bold uppercase tracking-[0.3em] mb-4">
               Library Media Center
             </span>
           </div>
-          
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-thin text-ps146-navy-900 mb-6 leading-tight">
+
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             L.M.C.
-            <span className="block text-ps146-coral-600 font-extralight mt-2">Library Media Center</span>
           </h1>
-          
-          <div className="w-24 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
-          
-          <p className="text-xl text-ps146-neutral-600 max-w-3xl mx-auto leading-relaxed">
+
+          <div className="w-24 h-1.5 bg-ps146-coral-500 mx-auto mb-8 shadow-lg shadow-ps146-coral-500/50"></div>
+
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
             Developing independent learners and bridging the home and school community through our comprehensive library program.
           </p>
         </div>
@@ -51,15 +49,18 @@ const Library = () => {
       {/* Library Overview */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-ps146-navy-50 rounded-3xl p-12 mb-16">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-light text-ps146-navy-900 mb-6">Welcome to Our Library</h2>
-              <div className="w-16 h-0.5 bg-ps146-coral-500 mx-auto mb-8"></div>
+          <div className="bg-gradient-to-br from-ps146-navy-50 to-white rounded-3xl p-12 md:p-16 mb-16 border border-ps146-navy-100 shadow-lg relative overflow-hidden">
+            <div className="absolute top-8 right-8 w-32 h-32 bg-ps146-coral-500/10 rounded-full blur-2xl"></div>
+            <div className="absolute bottom-8 left-8 w-24 h-24 bg-ps146-navy-500/10 rounded-full blur-2xl"></div>
+
+            <div className="relative z-10 text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-light text-ps146-navy-900 mb-6">Welcome to Our Library</h2>
+              <div className="w-20 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
             </div>
-            
-            <div className="max-w-4xl mx-auto text-center">
-              <p className="text-xl text-ps146-navy-800 leading-relaxed mb-8">
-                <strong>Our Library Media Center is open to all faculty, staff, students and their parents/caregivers.</strong> We look forward to 
+
+            <div className="relative z-10 max-w-4xl mx-auto text-center">
+              <p className="text-xl md:text-2xl text-ps146-navy-800 leading-relaxed font-light">
+                <span className="font-semibold text-ps146-coral-600">Our Library Media Center is open to all faculty, staff, students and their parents/caregivers.</span> We look forward to
                 developing independent learners and bridging the home and school community through our Library Media Center Program.
               </p>
             </div>
@@ -69,74 +70,83 @@ const Library = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             {/* Hours of Operation */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-ps146-navy-100">
-              <div className="flex items-center mb-6">
-                <ClockIcon className="h-8 w-8 text-ps146-coral-500 mr-3" />
-                <h3 className="text-xl font-semibold text-ps146-navy-800">Hours of Operation</h3>
+            <div className="group bg-white p-10 rounded-3xl shadow-lg border border-ps146-navy-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-8">
+                <div className="w-14 h-14 bg-ps146-coral-100 rounded-xl flex items-center justify-center mr-4 group-hover:bg-ps146-coral-600 transition-colors">
+                  <ClockIcon className="h-7 w-7 text-ps146-coral-600 group-hover:text-white transition-colors" />
+                </div>
+                <h3 className="text-2xl font-light text-ps146-navy-900">Hours of Operation</h3>
               </div>
-              
-              <div className="space-y-4">
+              <div className="w-16 h-1 bg-ps146-coral-500 mb-6"></div>
+
+              <div className="space-y-6">
                 <div>
-                  <p className="font-semibold text-ps146-navy-700 mb-1">Monday – Wednesday:</p>
-                  <p className="text-ps146-neutral-600 text-lg">8:00 AM – 3:10 PM</p>
+                  <p className="font-bold text-ps146-navy-900 mb-2">Monday – Wednesday:</p>
+                  <p className="text-ps146-neutral-700 text-lg">8:00 AM – 3:10 PM</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-ps146-navy-700 mb-1">Thursday – Friday:</p>
-                  <p className="text-ps146-neutral-600 text-lg">8:00 AM – 2:20 PM</p>
+                  <p className="font-bold text-ps146-navy-900 mb-2">Thursday – Friday:</p>
+                  <p className="text-ps146-neutral-700 text-lg">8:00 AM – 2:20 PM</p>
                 </div>
               </div>
             </div>
 
             {/* Contact Information */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-ps146-navy-100">
-              <div className="flex items-center mb-6">
-                <PhoneIcon className="h-8 w-8 text-ps146-coral-500 mr-3" />
-                <h3 className="text-xl font-semibold text-ps146-navy-800">Contact Information</h3>
+            <div className="group bg-white p-10 rounded-3xl shadow-lg border border-ps146-navy-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-8">
+                <div className="w-14 h-14 bg-ps146-navy-100 rounded-xl flex items-center justify-center mr-4 group-hover:bg-ps146-navy-700 transition-colors">
+                  <PhoneIcon className="h-7 w-7 text-ps146-navy-700 group-hover:text-white transition-colors" />
+                </div>
+                <h3 className="text-2xl font-light text-ps146-navy-900">Contact Information</h3>
               </div>
-              
-              <div className="space-y-4">
+              <div className="w-16 h-1 bg-ps146-coral-500 mb-6"></div>
+
+              <div className="space-y-6">
                 <div>
-                  <p className="font-semibold text-ps146-navy-700 mb-2">Library Staff:</p>
-                  <ul className="space-y-1 text-ps146-neutral-600">
-                    <li><strong>Mr. Powers</strong></li>
-                    <li><strong>Ms. H. Rodriguez</strong></li>
-                    <li><strong>Mr. V. Rijo</strong></li>
+                  <p className="font-bold text-ps146-navy-900 mb-3">Library Staff:</p>
+                  <ul className="space-y-2 text-ps146-neutral-700">
+                    <li className="font-medium">Mr. Powers</li>
+                    <li className="font-medium">Ms. H. Rodriguez</li>
+                    <li className="font-medium">Mr. V. Rijo</li>
                   </ul>
                 </div>
                 <div>
-                  <p className="font-semibold text-ps146-navy-700">Phone:</p>
-                  <p className="text-ps146-neutral-600">(212) 860-5877 ext. 2090</p>
+                  <p className="font-bold text-ps146-navy-900 mb-2">Phone:</p>
+                  <p className="text-ps146-coral-600 font-semibold text-lg">(212) 860-5877 ext. 2090</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-ps146-navy-700">Fax:</p>
-                  <p className="text-ps146-neutral-600">(212) 369-1225</p>
+                  <p className="font-bold text-ps146-navy-900 mb-2">Fax:</p>
+                  <p className="text-ps146-neutral-700">(212) 369-1225</p>
                 </div>
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border border-ps146-navy-100">
-              <div className="flex items-center mb-6">
-                <LinkIcon className="h-8 w-8 text-ps146-coral-500 mr-3" />
-                <h3 className="text-xl font-semibold text-ps146-navy-800">Quick Access</h3>
+            <div className="group bg-white p-10 rounded-3xl shadow-lg border border-ps146-navy-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-8">
+                <div className="w-14 h-14 bg-ps146-coral-100 rounded-xl flex items-center justify-center mr-4 group-hover:bg-ps146-coral-600 transition-colors">
+                  <LinkIcon className="h-7 w-7 text-ps146-coral-600 group-hover:text-white transition-colors" />
+                </div>
+                <h3 className="text-2xl font-light text-ps146-navy-900">Quick Access</h3>
               </div>
-              
-              <div className="space-y-3">
-                <a href="http://library.nycenet.edu/common/welcome.jsp?site=1212" 
-                   target="_blank" 
+              <div className="w-16 h-1 bg-ps146-coral-500 mb-6"></div>
+
+              <div className="space-y-4">
+                <a href="http://library.nycenet.edu/common/welcome.jsp?site=1212"
+                   target="_blank"
                    rel="noopener noreferrer"
-                   className="block p-3 rounded-lg bg-ps146-coral-50 hover:bg-ps146-coral-100 transition-colors duration-200">
-                  <div className="font-semibold text-ps146-coral-700">Online Catalog (OPAC)</div>
+                   className="block p-5 rounded-2xl bg-gradient-to-br from-ps146-coral-50 to-white border border-ps146-coral-100 hover:shadow-md transition-all">
+                  <div className="font-bold text-ps146-coral-700 mb-1">Online Catalog (OPAC)</div>
                   <div className="text-sm text-ps146-neutral-600">Search our library collection</div>
                 </a>
-                
-                <div className="p-3 rounded-lg bg-ps146-navy-50">
-                  <div className="font-semibold text-ps146-navy-700">Library Schedules</div>
+
+                <div className="p-5 rounded-2xl bg-gradient-to-br from-ps146-navy-50 to-white border border-ps146-navy-100">
+                  <div className="font-bold text-ps146-navy-700 mb-1">Library Schedules</div>
                   <div className="text-sm text-ps146-neutral-600">View L.M.C. availability</div>
                 </div>
-                
-                <div className="p-3 rounded-lg bg-ps146-navy-50">
-                  <div className="font-semibold text-ps146-navy-700">Learning Links</div>
+
+                <div className="p-5 rounded-2xl bg-gradient-to-br from-ps146-navy-50 to-white border border-ps146-navy-100">
+                  <div className="font-bold text-ps146-navy-700 mb-1">Learning Links</div>
                   <div className="text-sm text-ps146-neutral-600">Online resources and databases</div>
                 </div>
               </div>
@@ -146,11 +156,12 @@ const Library = () => {
       </section>
 
       {/* Services & Resources */}
-      <section className="py-20 bg-ps146-navy-50">
+      <section className="py-24 bg-gradient-to-br from-ps146-navy-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-ps146-navy-900 mb-8">Library Services & Resources</h2>
-            <p className="text-lg text-ps146-neutral-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-light text-ps146-navy-900 mb-6">Library Services & Resources</h2>
+            <div className="w-24 h-1.5 bg-ps146-coral-500 mx-auto mb-8"></div>
+            <p className="text-xl text-ps146-neutral-600 max-w-2xl mx-auto leading-relaxed">
               Discover the wide range of resources and services available to support learning and research.
             </p>
           </div>
@@ -160,33 +171,29 @@ const Library = () => {
               {
                 icon: BookOpenIcon,
                 title: "Book Collections",
-                description: "Extensive collection of books for all grade levels and interests",
-                color: "ps146-coral"
+                description: "Extensive collection of books for all grade levels and interests"
               },
               {
                 icon: ComputerDesktopIcon,
                 title: "Digital Resources",
-                description: "Online databases and educational technology tools",
-                color: "ps146-navy"
+                description: "Online databases and educational technology tools"
               },
               {
                 icon: MagnifyingGlassIcon,
                 title: "Research Support",
-                description: "Guidance for student research projects and assignments",
-                color: "ps146-coral"
+                description: "Guidance for student research projects and assignments"
               },
               {
                 icon: UsersIcon,
                 title: "Community Access",
-                description: "Open to students, families, faculty, and staff",
-                color: "ps146-navy"
+                description: "Open to students, families, faculty, and staff"
               }
             ].map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className={`w-16 h-16 bg-${service.color}-100 rounded-2xl flex items-center justify-center mb-6`}>
-                <service.icon className={`h-8 w-8 text-${service.color}-600`} />
+              <div key={index} className="group bg-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-ps146-navy-100">
+                <div className="w-16 h-16 bg-ps146-coral-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-ps146-coral-600 transition-colors">
+                  <service.icon className="h-8 w-8 text-ps146-coral-600 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-lg font-semibold text-ps146-navy-800 mb-4">{service.title}</h3>
+                <h3 className="text-lg font-bold text-ps146-navy-900 mb-4 group-hover:text-ps146-coral-700 transition-colors">{service.title}</h3>
                 <p className="text-ps146-neutral-600 leading-relaxed">{service.description}</p>
               </div>
             ))}
@@ -195,85 +202,96 @@ const Library = () => {
       </section>
 
       {/* Mission & Program */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-ps146-navy-900 rounded-3xl p-12 text-white relative overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute top-8 right-8 w-32 h-32 bg-white/10 rounded-full opacity-50"></div>
-            <div className="absolute bottom-8 left-8 w-20 h-20 bg-white/10 rounded-full opacity-30"></div>
-            
-            <div className="relative z-10">
-              <div className="text-center mb-12">
-                <AcademicCapIcon className="h-16 w-16 text-white mx-auto mb-6" />
-                <h2 className="text-3xl font-light mb-4">Our Library Mission</h2>
-                <div className="w-16 h-0.5 bg-white/60 mx-auto"></div>
-              </div>
-              
-              <div className="max-w-3xl mx-auto text-center">
-                <p className="text-xl text-white/90 leading-relaxed mb-8">
-                  The PS 146 Library Media Center serves as the heart of our learning community, fostering literacy, 
-                  research skills, and digital citizenship while supporting the diverse educational needs of our students, 
-                  families, and staff.
-                </p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {[
-                    "Independent Learning",
-                    "Research Skills", 
-                    "Community Connection"
-                  ].map((goal, index) => (
-                    <div key={index} className="text-center">
-                <div className="w-2 h-2 bg-ps146-coral-300 rounded-full mx-auto mb-3"></div>
-                      <p className="text-white font-medium">{goal}</p>
-                    </div>
-                  ))}
+      <section className="py-24 bg-gradient-to-br from-ps146-coral-600 to-ps146-coral-700 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-2xl mx-auto mb-8">
+              <AcademicCapIcon className="h-10 w-10 text-white" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Library Mission</h2>
+            <div className="w-24 h-1.5 bg-white/60 mx-auto"></div>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-xl md:text-2xl text-white/95 leading-relaxed mb-12 font-light">
+              The PS 146 Library Media Center serves as the heart of our learning community, fostering literacy,
+              research skills, and digital citizenship while supporting the diverse educational needs of our students,
+              families, and staff.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                "Independent Learning",
+                "Research Skills",
+                "Community Connection"
+              ].map((goal, index) => (
+                <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
+                  <div className="w-3 h-3 bg-white rounded-full mx-auto mb-4"></div>
+                  <p className="text-white font-bold text-lg">{goal}</p>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-ps146-navy-900 text-white py-16 border-t border-ps146-navy-800">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
+      <footer className="bg-ps146-navy-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="md:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-ps146-coral-600 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-ps146-coral-600 rounded-xl flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-lg">146</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-xl">PS 146</div>
-                  <div className="text-sm text-ps146-navy-300">Anna M. Short</div>
+                  <div className="font-bold text-xl text-white">PS 146</div>
+                  <div className="text-sm text-gray-400">Anna M. Short</div>
                 </div>
               </div>
-              <p className="text-ps146-navy-300 leading-relaxed">
+              <p className="text-gray-400 text-sm leading-relaxed">
                 Developing independent learners through comprehensive library and media center services.
               </p>
             </div>
-            
+
             <div>
-              <h4 className="font-semibold mb-6 text-lg">Library Hours</h4>
-              <div className="space-y-2 text-ps146-navy-300">
-                <p>Mon-Wed: 8:00 AM - 3:10 PM</p>
-                <p>Thu-Fri: 8:00 AM - 2:20 PM</p>
-                <p>Ext: 2090</p>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-6 text-lg">Quick Links</h4>
-              <ul className="space-y-3 text-ps146-navy-300">
-                <li><a href="http://library.nycenet.edu/common/welcome.jsp?site=1212" className="hover:text-ps146-coral-400 transition-colors">Online Catalog</a></li>
-                <li><a href="/library-roles" className="hover:text-ps146-coral-400 transition-colors">Roles & Responsibilities</a></li>
-                <li><a href="/library-mission" className="hover:text-ps146-coral-400 transition-colors">Vision & Mission</a></li>
+              <h4 className="font-bold mb-4 text-white text-lg">Quick Links</h4>
+              <ul className="space-y-3 text-gray-400 text-sm">
+                <li><a href="/" className="hover:text-ps146-coral-400 transition-colors">Home</a></li>
+                <li><a href="/mission-vision" className="hover:text-ps146-coral-400 transition-colors">Mission & Vision</a></li>
+                <li><a href="/principal-message" className="hover:text-ps146-coral-400 transition-colors">Principal's Message</a></li>
+                <li><a href="/lmc" className="hover:text-ps146-coral-400 transition-colors">Library Media Center</a></li>
               </ul>
             </div>
+
+            <div>
+              <h4 className="font-bold mb-4 text-white text-lg">Library Hours</h4>
+              <ul className="space-y-3 text-gray-400 text-sm">
+                <li>Mon-Wed: 8:00 AM - 3:10 PM</li>
+                <li>Thu-Fri: 8:00 AM - 2:20 PM</li>
+                <li>Phone: Ext. 2090</li>
+                <li><a href="http://library.nycenet.edu/common/welcome.jsp?site=1212" target="_blank" rel="noopener noreferrer" className="hover:text-ps146-coral-400 transition-colors">Online Catalog</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4 text-white text-lg">Contact Info</h4>
+              <div className="space-y-3 text-gray-400 text-sm">
+                <p className="text-white">421 E. 106th Street</p>
+                <p className="text-white">New York, NY 10029</p>
+                <p className="mt-4 text-ps146-coral-400 font-semibold text-lg">
+                  (212) 860-5877
+                </p>
+                <p>Mon-Fri: 8:00AM-2:20PM</p>
+              </div>
+            </div>
           </div>
-          
-          <div className="border-t border-ps146-navy-800 mt-16 pt-8 text-center text-ps146-navy-400">
-            <p>&copy; 2024 PS 146 Anna M. Short. All rights reserved.</p>
+
+          <div className="pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 PS 146 Anna M. Short. All Rights Reserved. | Proudly created with PS146.org</p>
           </div>
         </div>
       </footer>

@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
-import { 
+import {
   AcademicCapIcon,
   BookOpenIcon,
   ChatBubbleLeftRightIcon,
   ChartBarIcon,
   LightBulbIcon,
-  StarIcon,
-  UsersIcon
+  UsersIcon,
+  ArrowRightIcon
 } from '@heroicons/react/24/outline';
 
 const SchoolGoals = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = 'School Goals - PS 146';
   }, []);
 
   const goals = [
@@ -21,35 +22,35 @@ const SchoolGoals = () => {
       subject: "English Language Arts (ELA)",
       description: "By June 2024 we will develop rigorous and meaningful academic goals to improve student performance in English Language Arts.",
       icon: BookOpenIcon,
-      color: "ps146-coral"
+      color: "coral"
     },
     {
-      category: "Student Performance", 
+      category: "Student Performance",
       subject: "Mathematics",
       description: "By June 2024 we will develop rigorous and meaningful academic goals to improve student performance in Mathematics.",
       icon: ChartBarIcon,
-      color: "ps146-navy"
+      color: "navy"
     },
     {
       category: "Communication",
       subject: "Parent Communication",
       description: "By June 2024 we will increase parent engagement in their child's academic performance and progress.",
       icon: ChatBubbleLeftRightIcon,
-      color: "ps146-coral"
+      color: "coral"
     },
     {
       category: "Building Capacity",
       subject: "Improving Student Outcomes",
       description: "By June 2024 we will differentiate professional development to engage teachers in an active partnership to promote student learning and attain professional goals.",
       icon: LightBulbIcon,
-      color: "ps146-navy"
+      color: "navy"
     },
     {
       category: "Building Capacity",
       subject: "Communication",
       description: "By June 2024 we will clearly communicate the school-wide vision and expectations across the school community.",
       icon: UsersIcon,
-      color: "ps146-coral"
+      color: "coral"
     }
   ];
 
@@ -57,29 +58,27 @@ const SchoolGoals = () => {
     <main className="bg-white min-h-screen">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative pt-24 pb-16 bg-white">
+      {/* Hero Section - Enhanced */}
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ps146-navy-900 via-ps146-navy-800 to-ps146-navy-900 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-navy-50 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-navy-50 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-coral-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-coral-500/10 rounded-full blur-3xl"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
-            <span className="inline-flex items-center bg-ps146-navy-800 text-white px-6 py-3 text-sm font-semibold uppercase tracking-wider rounded-full">
-              <StarIcon className="h-4 w-4 mr-2" />
+            <span className="inline-block text-ps146-coral-400 text-sm font-bold uppercase tracking-[0.3em] mb-4">
               Strategic Vision
             </span>
           </div>
-          
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-thin text-ps146-navy-900 mb-6 leading-tight">
-            Our School
-            <span className="block text-ps146-coral-600 font-extralight mt-2">Goals</span>
+
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            School Goals
           </h1>
-          
-          <div className="w-24 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
-          
-          <p className="text-xl text-ps146-neutral-600 max-w-3xl mx-auto leading-relaxed">
+
+          <div className="w-24 h-1.5 bg-ps146-coral-500 mx-auto mb-8 shadow-lg shadow-ps146-coral-500/50"></div>
+
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
             Our strategic objectives guide our commitment to academic excellence, community engagement, and continuous improvement.
           </p>
         </div>
@@ -89,8 +88,9 @@ const SchoolGoals = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-ps146-navy-900 mb-8">Strategic Focus Areas</h2>
-            <p className="text-lg text-ps146-neutral-600 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-light text-ps146-navy-900 mb-6">Strategic Focus Areas</h2>
+            <div className="w-24 h-1.5 bg-ps146-coral-500 mx-auto mb-8"></div>
+            <p className="text-lg md:text-xl text-ps146-neutral-600 max-w-2xl mx-auto leading-relaxed">
               Our goals are organized around three key areas that drive our educational mission and community engagement.
             </p>
           </div>
@@ -116,14 +116,14 @@ const SchoolGoals = () => {
                 count: "2 Goals"
               }
             ].map((area, index) => (
-              <div key={index} className="bg-ps146-navy-50 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300">
-                <div className="flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-sm mb-6 mx-auto">
-                  <area.icon className="h-8 w-8 text-ps146-coral-600" />
+              <div key={index} className="group bg-gradient-to-br from-ps146-navy-50 to-white p-8 rounded-3xl border border-ps146-navy-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="flex items-center justify-center w-20 h-20 bg-white rounded-2xl shadow-md mb-6 mx-auto group-hover:bg-ps146-coral-600 transition-colors">
+                  <area.icon className="h-10 w-10 text-ps146-coral-600 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-xl font-semibold text-ps146-navy-800 text-center mb-4">{area.title}</h3>
-                <p className="text-ps146-neutral-600 text-center mb-4">{area.description}</p>
+                <h3 className="text-2xl font-bold text-ps146-navy-900 text-center mb-4 group-hover:text-ps146-coral-700 transition-colors">{area.title}</h3>
+                <p className="text-ps146-neutral-600 text-center mb-6 leading-relaxed">{area.description}</p>
                 <div className="text-center">
-                  <span className="inline-block bg-ps146-coral-100 text-ps146-coral-700 px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="inline-block bg-ps146-coral-100 text-ps146-coral-700 px-4 py-2 rounded-full text-sm font-bold">
                     {area.count}
                   </span>
                 </div>
@@ -134,38 +134,44 @@ const SchoolGoals = () => {
       </section>
 
       {/* Detailed Goals */}
-      <section className="py-20 bg-ps146-navy-50">
+      <section className="py-24 bg-gradient-to-br from-ps146-navy-50 to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-ps146-navy-900 mb-4">Our Commitments for 2024</h2>
-            <div className="w-20 h-0.5 bg-ps146-coral-500 mx-auto"></div>
+            <h2 className="text-4xl md:text-5xl font-light text-ps146-navy-900 mb-6">Our Commitments for 2024</h2>
+            <div className="w-24 h-1.5 bg-ps146-coral-500 mx-auto"></div>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6">
             {goals.map((goal, index) => (
-              <div key={index} className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="group bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-ps146-navy-100">
                 <div className="p-8 lg:p-12">
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    
+
                     {/* Goal Icon & Category */}
                     <div className="lg:col-span-3">
                       <div className="text-center lg:text-left">
-                        <div className={`inline-flex items-center justify-center w-20 h-20 bg-${goal.color}-100 rounded-2xl mb-4`}>
-                          <goal.icon className={`h-10 w-10 text-${goal.color}-600`} />
+                        <div className={`inline-flex items-center justify-center w-20 h-20 ${
+                          goal.color === 'coral' ? 'bg-ps146-coral-100' : 'bg-ps146-navy-100'
+                        } rounded-2xl mb-4 group-hover:scale-110 transition-transform`}>
+                          <goal.icon className={`h-10 w-10 ${
+                            goal.color === 'coral' ? 'text-ps146-coral-600' : 'text-ps146-navy-700'
+                          }`} />
                         </div>
-                        <div className="mb-2">
-                          <span className={`inline-block bg-${goal.color}-100 text-${goal.color}-700 px-3 py-1 rounded-full text-sm font-medium`}>
+                        <div className="mb-3">
+                          <span className={`inline-block ${
+                            goal.color === 'coral' ? 'bg-ps146-coral-100 text-ps146-coral-700' : 'bg-ps146-navy-100 text-ps146-navy-700'
+                          } px-4 py-2 rounded-full text-sm font-bold`}>
                             {goal.category}
                           </span>
                         </div>
-                        <h3 className="text-xl font-semibold text-ps146-navy-800">{goal.subject}</h3>
+                        <h3 className="text-xl font-bold text-ps146-navy-900">{goal.subject}</h3>
                       </div>
                     </div>
 
                     {/* Goal Description */}
                     <div className="lg:col-span-8">
                       <div className="relative">
-                        <div className="absolute -left-4 top-0 w-1 h-full bg-ps146-coral-500 rounded-full lg:block hidden"></div>
+                        <div className="absolute -left-4 top-0 w-1.5 h-full bg-ps146-coral-500 rounded-full lg:block hidden"></div>
                         <p className="text-lg text-ps146-navy-700 leading-relaxed lg:pl-8">
                           {goal.description}
                         </p>
@@ -175,7 +181,9 @@ const SchoolGoals = () => {
                     {/* Goal Number */}
                     <div className="lg:col-span-1">
                       <div className="text-center">
-                        <div className={`w-12 h-12 bg-${goal.color}-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto`}>
+                        <div className={`w-14 h-14 ${
+                          goal.color === 'coral' ? 'bg-ps146-coral-600' : 'bg-ps146-navy-700'
+                        } text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto shadow-lg`}>
                           {index + 1}
                         </div>
                       </div>
@@ -189,80 +197,115 @@ const SchoolGoals = () => {
       </section>
 
       {/* Implementation Focus */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-ps146-navy-900 rounded-3xl p-12 text-white relative overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute top-8 right-8 w-32 h-32 bg-white/10 rounded-full opacity-50"></div>
-            <div className="absolute bottom-8 left-8 w-20 h-20 bg-white/10 rounded-full opacity-30"></div>
-            
-            <div className="relative z-10 text-center">
-              <h2 className="text-3xl font-light mb-8">Achieving Excellence Together</h2>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                {[
-                  { title: "Academic Growth", subtitle: "Rigorous & Meaningful Goals" },
-                  { title: "Family Engagement", subtitle: "Strong Partnerships" },
-                  { title: "Professional Development", subtitle: "Teacher Excellence" }
-                ].map((item, index) => (
-                  <div key={index} className="text-center">
-                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-white/80 text-sm">{item.subtitle}</p>
-                  </div>
-                ))}
+      <section className="py-24 bg-gradient-to-br from-ps146-coral-600 to-ps146-coral-700 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Achieving Excellence Together</h2>
+            <div className="w-24 h-1.5 bg-white/60 mx-auto"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {[
+              { title: "Academic Growth", subtitle: "Rigorous & Meaningful Goals", icon: AcademicCapIcon },
+              { title: "Family Engagement", subtitle: "Strong Partnerships", icon: UsersIcon },
+              { title: "Professional Development", subtitle: "Teacher Excellence", icon: LightBulbIcon }
+            ].map((item, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-all">
+                <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-6">
+                  <item.icon className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-3 text-center">{item.title}</h3>
+                <p className="text-white/90 text-center">{item.subtitle}</p>
               </div>
-              
-              <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto">
-                These goals represent our unwavering commitment to providing exceptional education while building 
-                strong partnerships with families and our community. Together, we work toward continuous improvement 
-                and student success.
-              </p>
-            </div>
+            ))}
+          </div>
+
+          <p className="text-xl text-white/95 leading-relaxed text-center max-w-3xl mx-auto">
+            These goals represent our unwavering commitment to providing exceptional education while building
+            strong partnerships with families and our community. Together, we work toward continuous improvement
+            and student success.
+          </p>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-light text-ps146-navy-900 mb-8">
+            Be Part of Our Journey
+          </h2>
+          <p className="text-xl text-ps146-neutral-600 mb-10 leading-relaxed">
+            Join us in our mission to achieve excellence and create a nurturing environment for every student.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/admissions" className="inline-flex items-center justify-center bg-ps146-coral-600 hover:bg-ps146-coral-700 text-white px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
+              <span>Apply Now</span>
+              <ArrowRightIcon className="ml-2 h-5 w-5" />
+            </a>
+            <a href="/contact" className="inline-flex items-center justify-center border-2 border-ps146-navy-700 text-ps146-navy-700 hover:bg-ps146-navy-700 hover:text-white px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300">
+              Contact Us
+            </a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-ps146-navy-900 text-white py-16 border-t border-ps146-navy-800">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
+      <footer className="bg-ps146-navy-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="md:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-ps146-coral-600 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-ps146-coral-600 rounded-xl flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-lg">146</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-xl">PS 146</div>
-                  <div className="text-sm text-ps146-navy-300">Anna M. Short</div>
+                  <div className="font-bold text-xl text-white">PS 146</div>
+                  <div className="text-sm text-gray-400">Anna M. Short</div>
                 </div>
               </div>
-              <p className="text-ps146-navy-300 leading-relaxed">
+              <p className="text-gray-400 text-sm leading-relaxed">
                 Working together to achieve our strategic goals and provide exceptional education for every student.
               </p>
             </div>
-            
+
             <div>
-              <h4 className="font-semibold mb-6 text-lg">Our Focus</h4>
-              <ul className="space-y-3 text-ps146-navy-300">
+              <h4 className="font-bold mb-4 text-white text-lg">Our Focus</h4>
+              <ul className="space-y-3 text-gray-400 text-sm">
                 <li>Academic Excellence</li>
                 <li>Parent Engagement</li>
                 <li>Professional Development</li>
                 <li>Community Communication</li>
               </ul>
             </div>
-            
+
             <div>
-              <h4 className="font-semibold mb-6 text-lg">Contact Info</h4>
-              <div className="space-y-3 text-ps146-navy-300">
-                <p>421 East 106th Street</p>
-                <p>New York, NY 10029</p>
-                <p>Phone: (212) 860-5877</p>
+              <h4 className="font-bold mb-4 text-white text-lg">Quick Links</h4>
+              <ul className="space-y-3 text-gray-400 text-sm">
+                <li><a href="/" className="hover:text-ps146-coral-400 transition-colors">Home</a></li>
+                <li><a href="/mission-vision" className="hover:text-ps146-coral-400 transition-colors">Mission & Vision</a></li>
+                <li><a href="/principal-message" className="hover:text-ps146-coral-400 transition-colors">Principal's Message</a></li>
+                <li><a href="/lmc" className="hover:text-ps146-coral-400 transition-colors">Library</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4 text-white text-lg">Contact Info</h4>
+              <div className="space-y-3 text-gray-400 text-sm">
+                <p className="text-white">421 E. 106th Street</p>
+                <p className="text-white">New York, NY 10029</p>
+                <p className="mt-4 text-ps146-coral-400 font-semibold text-lg">
+                  (212) 860-5877
+                </p>
+                <p>Mon-Fri: 8:00AM-2:20PM</p>
               </div>
             </div>
           </div>
-          
-          <div className="border-t border-ps146-navy-800 mt-16 pt-8 text-center text-ps146-navy-400">
-            <p>&copy; 2024 PS 146 Anna M. Short. All rights reserved.</p>
+
+          <div className="pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 PS 146 Anna M. Short. All Rights Reserved. | Proudly created with PS146.org</p>
           </div>
         </div>
       </footer>

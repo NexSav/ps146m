@@ -18,26 +18,31 @@ const LMC = () => {
     <main className="bg-white">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ps146-navy-900 via-ps146-navy-800 to-ps146-navy-900">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="mb-6">
-              <span className="inline-flex items-center bg-ps146-coral-600/10 backdrop-blur-sm text-ps146-coral-400 px-6 py-3 text-sm font-semibold uppercase tracking-wider rounded-full border border-ps146-coral-400/30">
-                <BookOpenIcon className="h-5 w-5 mr-2" />
-                Library Media Center
-              </span>
-            </div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
+      {/* Hero Section - Enhanced */}
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ps146-navy-900 via-ps146-navy-800 to-ps146-navy-900 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-coral-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-coral-500/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-8">
+            <span className="inline-block text-ps146-coral-400 text-sm font-bold uppercase tracking-[0.3em] mb-4">
               Library Media Center
-            </h1>
-            <div className="w-24 h-1 bg-ps146-coral-500 mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
-              Our Library Media Center is open to all faculty, staff, students and their parents/caregivers.
-              We look forward to developing independent learners and bridging the home and school community
-              through our Library Media Center Program.
-            </p>
+            </span>
           </div>
+
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            Library Media Center
+          </h1>
+
+          <div className="w-24 h-1.5 bg-ps146-coral-500 mx-auto mb-8 shadow-lg shadow-ps146-coral-500/50"></div>
+
+          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
+            Our Library Media Center is open to all faculty, staff, students and their parents/caregivers.
+            We look forward to developing independent learners and bridging the home and school community
+            through our Library Media Center Program.
+          </p>
         </div>
       </section>
 
@@ -49,84 +54,89 @@ const LMC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
 
             {/* Hours of Operation */}
-            <div className="bg-gradient-to-br from-ps146-navy-50 to-white p-8 rounded-3xl shadow-sm border border-ps146-navy-100 hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-ps146-coral-100 rounded-2xl flex items-center justify-center mr-4">
-                  <ClockIcon className="h-6 w-6 text-ps146-coral-600" />
+            <div className="group bg-gradient-to-br from-ps146-navy-50 to-white p-10 rounded-3xl shadow-lg border border-ps146-navy-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-8">
+                <div className="w-14 h-14 bg-ps146-coral-100 rounded-xl flex items-center justify-center mr-4 group-hover:bg-ps146-coral-600 transition-colors">
+                  <ClockIcon className="h-7 w-7 text-ps146-coral-600 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-2xl font-semibold text-ps146-navy-800">Hours of Operation</h3>
+                <h3 className="text-2xl font-light text-ps146-navy-900">Hours of Operation</h3>
               </div>
-              <div className="space-y-4 text-ps146-neutral-700">
-                <div className="flex justify-between items-center pb-3 border-b border-ps146-navy-100">
-                  <span className="font-medium">Monday – Wednesday:</span>
-                  <span className="text-ps146-navy-900 font-semibold">8:00 AM – 3:10 PM</span>
+              <div className="w-16 h-1 bg-ps146-coral-500 mb-6"></div>
+              <div className="space-y-6 text-ps146-neutral-700">
+                <div className="flex flex-col pb-4 border-b border-ps146-navy-100">
+                  <span className="font-bold text-ps146-navy-900 mb-2">Monday – Wednesday:</span>
+                  <span className="text-ps146-coral-600 font-semibold text-lg">8:00 AM – 3:10 PM</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="font-medium">Thursday – Friday:</span>
-                  <span className="text-ps146-navy-900 font-semibold">8:00 AM – 2:20 PM</span>
+                <div className="flex flex-col">
+                  <span className="font-bold text-ps146-navy-900 mb-2">Thursday – Friday:</span>
+                  <span className="text-ps146-coral-600 font-semibold text-lg">8:00 AM – 2:20 PM</span>
                 </div>
               </div>
             </div>
 
             {/* Contact Information */}
-            <div className="bg-gradient-to-br from-ps146-coral-50 to-white p-8 rounded-3xl shadow-sm border border-ps146-coral-100 hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-ps146-coral-100 rounded-2xl flex items-center justify-center mr-4">
-                  <PhoneIcon className="h-6 w-6 text-ps146-coral-600" />
+            <div className="group bg-gradient-to-br from-ps146-coral-50 to-white p-10 rounded-3xl shadow-lg border border-ps146-coral-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-8">
+                <div className="w-14 h-14 bg-ps146-coral-100 rounded-xl flex items-center justify-center mr-4 group-hover:bg-ps146-coral-600 transition-colors">
+                  <PhoneIcon className="h-7 w-7 text-ps146-coral-600 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-2xl font-semibold text-ps146-navy-800">Contact Information</h3>
+                <h3 className="text-2xl font-light text-ps146-navy-900">Contact Information</h3>
               </div>
-              <div className="space-y-3 text-ps146-neutral-700">
+              <div className="w-16 h-1 bg-ps146-coral-500 mb-6"></div>
+              <div className="space-y-5 text-ps146-neutral-700">
                 <div>
-                  <p className="font-medium text-ps146-navy-800 mb-2">Library Staff:</p>
-                  <p className="text-lg font-semibold text-ps146-coral-700">Mr. Powers</p>
-                  <p className="text-lg font-semibold text-ps146-coral-700">Ms. H. Rodriguez</p>
-                  <p className="text-lg font-semibold text-ps146-coral-700">Mr. V. Rijo</p>
+                  <p className="font-bold text-ps146-navy-900 mb-3">Library Staff:</p>
+                  <div className="space-y-2">
+                    <p className="text-lg font-medium text-ps146-coral-700">Mr. Powers</p>
+                    <p className="text-lg font-medium text-ps146-coral-700">Ms. H. Rodriguez</p>
+                    <p className="text-lg font-medium text-ps146-coral-700">Mr. V. Rijo</p>
+                  </div>
                 </div>
-                <div className="pt-4 border-t border-ps146-coral-100">
-                  <p className="flex items-center mb-2">
-                    <PhoneIcon className="h-4 w-4 mr-2 text-ps146-coral-600" />
-                    <span className="font-medium">Phone:</span>
-                    <span className="ml-2 text-ps146-navy-900 font-semibold">(212) 860-5877 ext. 2090</span>
+                <div className="pt-5 border-t border-ps146-coral-200 space-y-3">
+                  <p className="flex items-center">
+                    <PhoneIcon className="h-5 w-5 mr-3 text-ps146-coral-600" />
+                    <span className="font-bold text-ps146-navy-900">Phone:</span>
+                    <span className="ml-2 text-ps146-coral-600 font-semibold">(212) 860-5877 ext. 2090</span>
                   </p>
                   <p className="flex items-center">
-                    <DocumentTextIcon className="h-4 w-4 mr-2 text-ps146-coral-600" />
-                    <span className="font-medium">Fax:</span>
-                    <span className="ml-2 text-ps146-navy-900 font-semibold">(212) 369-1225</span>
+                    <DocumentTextIcon className="h-5 w-5 mr-3 text-ps146-coral-600" />
+                    <span className="font-bold text-ps146-navy-900">Fax:</span>
+                    <span className="ml-2 text-ps146-neutral-700">(212) 369-1225</span>
                   </p>
                 </div>
               </div>
             </div>
 
             {/* What's on this Site */}
-            <div className="bg-gradient-to-br from-ps146-navy-50 to-white p-8 rounded-3xl shadow-sm border border-ps146-navy-100 hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-ps146-coral-100 rounded-2xl flex items-center justify-center mr-4">
-                  <GlobeAltIcon className="h-6 w-6 text-ps146-coral-600" />
+            <div className="group bg-gradient-to-br from-ps146-navy-50 to-white p-10 rounded-3xl shadow-lg border border-ps146-navy-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-8">
+                <div className="w-14 h-14 bg-ps146-coral-100 rounded-xl flex items-center justify-center mr-4 group-hover:bg-ps146-coral-600 transition-colors">
+                  <GlobeAltIcon className="h-7 w-7 text-ps146-coral-600 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-2xl font-semibold text-ps146-navy-800">What's on this Site</h3>
+                <h3 className="text-2xl font-light text-ps146-navy-900">What's on this Site</h3>
               </div>
-              <div className="space-y-3">
+              <div className="w-16 h-1 bg-ps146-coral-500 mb-6"></div>
+              <div className="space-y-4">
                 <a
                   href="/library-schedules"
-                  className="block p-4 bg-white hover:bg-ps146-coral-50 rounded-xl border border-ps146-navy-100 hover:border-ps146-coral-200 transition-all duration-300 group"
+                  className="block p-5 bg-white hover:bg-ps146-coral-50 rounded-2xl border border-ps146-navy-100 hover:border-ps146-coral-200 hover:shadow-md transition-all duration-300 group"
                 >
-                  <p className="font-semibold text-ps146-navy-800 group-hover:text-ps146-coral-700 mb-1">
+                  <p className="font-bold text-ps146-navy-900 group-hover:text-ps146-coral-700 mb-1">
                     The Library Schedules/Calendars
                   </p>
                   <p className="text-sm text-ps146-neutral-600">View L.M.C. availability</p>
                 </a>
                 <a
                   href="/library-collections"
-                  className="block p-4 bg-white hover:bg-ps146-coral-50 rounded-xl border border-ps146-navy-100 hover:border-ps146-coral-200 transition-all duration-300 group"
+                  className="block p-5 bg-white hover:bg-ps146-coral-50 rounded-2xl border border-ps146-navy-100 hover:border-ps146-coral-200 hover:shadow-md transition-all duration-300 group"
                 >
-                  <p className="font-semibold text-ps146-navy-800 group-hover:text-ps146-coral-700 mb-1">
+                  <p className="font-bold text-ps146-navy-900 group-hover:text-ps146-coral-700 mb-1">
                     L.M.C. Book Collections Info
                   </p>
                   <p className="text-sm text-ps146-neutral-600">View a general listing of the types of materials available</p>
                 </a>
-                <div className="block p-4 bg-white rounded-xl border border-ps146-navy-100">
-                  <p className="font-semibold text-ps146-navy-800 mb-1">
+                <div className="block p-5 bg-white rounded-2xl border border-ps146-navy-100">
+                  <p className="font-bold text-ps146-navy-900 mb-1">
                     Policies and Procedures
                   </p>
                   <p className="text-sm text-ps146-neutral-600">Info for all patrons regarding borrowing</p>
@@ -136,26 +146,31 @@ const LMC = () => {
           </div>
 
           {/* Quick Links Section */}
-          <div className="bg-ps146-navy-50 rounded-3xl p-12">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-light text-ps146-navy-900 mb-4">Quick Access</h2>
-              <div className="w-20 h-0.5 bg-ps146-coral-600 mx-auto"></div>
+          <div className="bg-gradient-to-br from-ps146-coral-600 to-ps146-coral-700 rounded-3xl p-12 md:p-16 relative overflow-hidden shadow-lg">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+            <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+            <div className="relative z-10 text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Quick Access</h2>
+              <div className="w-24 h-1.5 bg-white/60 mx-auto"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <a
                 href="http://library.nycenet.edu/common/servlet/presenthomeform.do;jsessionid=E8EFADBF8B281D1656FB472D5B0DB3D2?l2m=Home&tm=Home&l2m=Home"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white hover:bg-ps146-coral-600 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="group bg-white/10 backdrop-blur-sm hover:bg-white p-10 rounded-3xl border border-white/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
-                <div className="flex items-center mb-4">
-                  <BookOpenIcon className="h-8 w-8 text-ps146-coral-600 group-hover:text-white mr-4 transition-colors" />
-                  <h3 className="text-xl font-semibold text-ps146-navy-800 group-hover:text-white transition-colors">
+                <div className="flex items-center mb-6">
+                  <div className="w-14 h-14 bg-white/20 group-hover:bg-ps146-coral-600 rounded-xl flex items-center justify-center mr-4 transition-colors">
+                    <BookOpenIcon className="h-7 w-7 text-white group-hover:text-white transition-colors" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white group-hover:text-ps146-navy-900 transition-colors">
                     Online Catalog
                   </h3>
                 </div>
-                <p className="text-ps146-neutral-600 group-hover:text-white/90 transition-colors">
+                <p className="text-white/90 group-hover:text-ps146-neutral-700 transition-colors leading-relaxed">
                   Searchable database of materials available in the library media center
                 </p>
               </a>
@@ -164,15 +179,17 @@ const LMC = () => {
                 href="http://ps146wiki.wikispaces.com/Databases"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white hover:bg-ps146-coral-600 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="group bg-white/10 backdrop-blur-sm hover:bg-white p-10 rounded-3xl border border-white/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
               >
-                <div className="flex items-center mb-4">
-                  <GlobeAltIcon className="h-8 w-8 text-ps146-coral-600 group-hover:text-white mr-4 transition-colors" />
-                  <h3 className="text-xl font-semibold text-ps146-navy-800 group-hover:text-white transition-colors">
+                <div className="flex items-center mb-6">
+                  <div className="w-14 h-14 bg-white/20 group-hover:bg-ps146-coral-600 rounded-xl flex items-center justify-center mr-4 transition-colors">
+                    <GlobeAltIcon className="h-7 w-7 text-white group-hover:text-white transition-colors" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white group-hover:text-ps146-navy-900 transition-colors">
                     Learning Links
                   </h3>
                 </div>
-                <p className="text-ps146-neutral-600 group-hover:text-white/90 transition-colors">
+                <p className="text-white/90 group-hover:text-ps146-neutral-700 transition-colors leading-relaxed">
                   Links to online resources for students, parents and teachers, including a variety of databases
                 </p>
               </a>
@@ -183,46 +200,59 @@ const LMC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-ps146-navy-900 text-white py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
+      <footer className="bg-ps146-navy-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="md:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-ps146-coral-600 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-ps146-coral-600 rounded-xl flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold text-lg">146</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-xl">PS 146</div>
-                  <div className="text-sm text-ps146-navy-300">Anna M. Short</div>
+                  <div className="font-bold text-xl text-white">PS 146</div>
+                  <div className="text-sm text-gray-400">Anna M. Short</div>
                 </div>
               </div>
-              <p className="text-ps146-navy-300 leading-relaxed mb-4">
+              <p className="text-gray-400 text-sm leading-relaxed">
                 Serving the East Harlem community with excellence in education and multicultural support.
-              </p>
-              <p className="text-ps146-navy-400 text-sm">
-                @2024 by PS146. All Rights Reserved.
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 text-lg">Quick Links</h4>
-              <ul className="space-y-3 text-ps146-navy-300">
+              <h4 className="font-bold mb-4 text-white text-lg">Quick Links</h4>
+              <ul className="space-y-3 text-gray-400 text-sm">
+                <li><a href="/" className="hover:text-ps146-coral-400 transition-colors">Home</a></li>
+                <li><a href="/mission-vision" className="hover:text-ps146-coral-400 transition-colors">Mission & Vision</a></li>
                 <li><a href="/library" className="hover:text-ps146-coral-400 transition-colors">Library Media Center</a></li>
-                <li><a href="/school-events" className="hover:text-ps146-coral-400 transition-colors">School Events</a></li>
-                <li><a href="http://www.smoothusa.com/ps146m" className="hover:text-ps146-coral-400 transition-colors">School Store</a></li>
                 <li><a href="/supply-lists" className="hover:text-ps146-coral-400 transition-colors">Supply Lists</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-6 text-lg">Contact Info</h4>
-              <div className="space-y-3 text-ps146-navy-300">
-                <p>421 E. 106th Street</p>
-                <p>New York, NY 10029</p>
-                <p>Hours: Mon-Fri 8:00AM-3:00PM</p>
-                <p className="text-ps146-coral-400 font-medium">(212) 860-5877</p>
+              <h4 className="font-bold mb-4 text-white text-lg">Library Hours</h4>
+              <ul className="space-y-3 text-gray-400 text-sm">
+                <li>Mon-Wed: 8:00 AM - 3:10 PM</li>
+                <li>Thu-Fri: 8:00 AM - 2:20 PM</li>
+                <li>Phone: Ext. 2090</li>
+                <li>Fax: (212) 369-1225</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-bold mb-4 text-white text-lg">Contact Info</h4>
+              <div className="space-y-3 text-gray-400 text-sm">
+                <p className="text-white">421 E. 106th Street</p>
+                <p className="text-white">New York, NY 10029</p>
+                <p className="mt-4 text-ps146-coral-400 font-semibold text-lg">
+                  (212) 860-5877
+                </p>
+                <p>Mon-Fri: 8:00AM-2:20PM</p>
               </div>
             </div>
+          </div>
+
+          <div className="pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            <p>&copy; 2024 PS 146 Anna M. Short. All Rights Reserved. | Proudly created with PS146.org</p>
           </div>
         </div>
       </footer>
