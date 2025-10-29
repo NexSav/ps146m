@@ -8,6 +8,9 @@ import Library from './pages/Library';
 import LMC from './pages/LMC';
 import Admissions from './pages/Admissions';
 import SupplyLists from './pages/SupplyLists';
+import OurStaff from './pages/OurStaff';
+import LibraryRoles from './pages/LibraryRoles';
+import SchoolCalendar from './pages/SchoolCalendar';
 import ComingSoon from './pages/ComingSoon';
 import './App.css';
 
@@ -28,7 +31,7 @@ function App() {
 
           {/* Coming Soon Pages - About P.S.146 */}
           <Route path="/about" element={<ComingSoon />} />
-          <Route path="/staff" element={<ComingSoon />} />
+          <Route path="/staff" element={<OurStaff />} />
 
           {/* Coming Soon Pages - Faculty/Staff */}
           <Route path="/faculty-staff" element={<ComingSoon />} />
@@ -37,11 +40,11 @@ function App() {
           {/* Coming Soon Pages - News */}
           <Route path="/news" element={<ComingSoon />} />
           <Route path="/cell-phone-policy" element={<ComingSoon />} />
-          <Route path="/school-calendar" element={<ComingSoon />} />
+          <Route path="/school-calendar" element={<SchoolCalendar />} />
           <Route path="/announcements" element={<ComingSoon />} />
 
           {/* Coming Soon Pages - L.M.C. */}
-          <Route path="/library-roles" element={<ComingSoon />} />
+          <Route path="/library-roles" element={<LibraryRoles />} />
           <Route path="/library-mission" element={<ComingSoon />} />
           <Route path="/library-schedules" element={<ComingSoon />} />
           <Route path="/library-collections" element={<ComingSoon />} />

@@ -50,8 +50,9 @@ const Navbar = () => {
       dropdown: [
         {
           name: 'Staff Login',
-          href: '/staff-login',
-          description: 'Secure access to the staff portal and resources.'
+          href: 'https://ps146.org/wp-login.php?redirect_to=https%3A%2F%2Fps146.org%2Ffaculty-home%2F',
+          description: 'Secure access to the staff portal and resources.',
+          external: true
         },
         {
           name: 'NYCDoE TeachHub',
@@ -93,8 +94,9 @@ const Navbar = () => {
       dropdown: [
         {
           name: 'School Cell Phone & Electronic Device Policy',
-          href: '/cell-phone-policy',
-          description: 'Review our school guidelines for electronic devices and cell phone usage.'
+          href: 'https://drive.google.com/file/d/1MeZVzp2pzdupaUROlUv1l8rwFPnfCPD2/view',
+          description: 'Review our school guidelines for electronic devices and cell phone usage.',
+          external: true
         },
         {
           name: 'School Calendar',
@@ -155,7 +157,7 @@ const Navbar = () => {
         },
         {
           name: 'Calendar of Events',
-          href: '/events-calendar',
+          href: '/school-calendar',
           description: 'View upcoming school events, activities, and important dates.'
         },
         {
