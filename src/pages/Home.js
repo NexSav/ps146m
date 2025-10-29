@@ -46,13 +46,13 @@ const Home = () => {
           >
             <source src="/assets/videos/home/PS 146.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-ps146-navy-900/95 via-ps146-navy-900/75 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-ps146-navy-900/60 via-ps146-navy-900/40 to-transparent"></div>
           {/* Additional overlay for depth */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ps146-navy-900/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-ps146-navy-900/20"></div>
         </div>
 
         {/* Hero Content - Centered Left */}
-        <div className="relative z-10 h-full flex items-center pt-20">
+        <div className="relative z-10 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 w-full">
             <div className="max-w-2xl animate-fade-in-up">
               <div className="mb-6">
@@ -327,7 +327,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 bg-ps146-navy-50">
+      <section className="py-24 bg-gradient-to-br from-white to-ps146-navy-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-light text-ps146-navy-900 mb-4">Our Community at a Glance</h2>
@@ -414,7 +414,7 @@ const Home = () => {
       </section>
 
       {/* Contact/Visit Section - Full Width with Image */}
-      <section className="py-24 bg-ps146-navy-900 text-white">
+      <section className="py-24 bg-ps146-navy-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -456,9 +456,9 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="aspect-[4/3] bg-ps146-navy-800 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="aspect-[4/3] bg-ps146-navy-700 rounded-3xl overflow-hidden shadow-2xl">
               <div className="w-full h-full flex items-center justify-center">
-                <UsersIcon className="h-32 w-32 text-ps146-navy-700" />
+                <UsersIcon className="h-32 w-32 text-ps146-navy-600" />
               </div>
             </div>
           </div>
@@ -466,7 +466,7 @@ const Home = () => {
       </section>
 
       {/* Footer - Modern & Organized */}
-      <footer className="bg-ps146-navy-900 text-white py-16">
+      <footer className="bg-ps146-navy-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-1">

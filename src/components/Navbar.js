@@ -8,23 +8,9 @@ import {
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeSubDropdown, setActiveSubDropdown] = useState(null);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 20);
-    };
-
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -339,13 +325,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled
-        ? 'bg-ps146-navy-900/98 backdrop-blur-lg shadow-2xl'
-        : 'bg-ps146-navy-900/95 backdrop-blur-md shadow-lg'
-    }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto bg-white/95 backdrop-blur-lg shadow-2xl rounded-2xl border border-ps146-navy-100">
+        <div className="flex justify-between items-center h-16 px-4 sm:px-6">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
             <div className="relative transform group-hover:scale-105 transition-all duration-300">
@@ -365,11 +347,7 @@ const Navbar = () => {
                   <div>
                     <Link
                       to={item.href}
-                      className={`flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
-                        isScrolled
-                          ? 'text-white/90 hover:text-white hover:bg-white/10'
-                          : 'text-white/90 hover:text-white hover:bg-white/10'
-                      }`}
+                      className="flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 text-ps146-navy-800 hover:text-ps146-coral-600 hover:bg-ps146-navy-50"
                       onMouseEnter={() => setActiveDropdown(index)}
                     >
                       {item.name}
@@ -379,10 +357,13 @@ const Navbar = () => {
                     {/* Mega Menu Dropdown */}
                     {activeDropdown === index && (
                       <div
-                        className="fixed left-0 right-0 top-16 bg-white shadow-2xl border-t-4 border-ps146-coral-500 z-50"
+                        className="fixed left-0 right-0 top-24 bg-white shadow-2xl border-t-4 border-ps146-coral-500 z-50 rounded-b-2xl mx-4 sm:mx-6 lg:mx-8"
                         onMouseLeave={() => setActiveDropdown(null)}
                         style={{
-                          animation: 'slideDown 0.3s ease-out'
+                          animation: 'slideDown 0.3s ease-out',
+                          maxWidth: 'calc(1280px - 4rem)',
+                          marginLeft: 'auto',
+                          marginRight: 'auto'
                         }}
                       >
                         <div className="max-w-7xl mx-auto px-8 py-8">
@@ -523,9 +504,7 @@ const Navbar = () => {
                     className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
                       location.pathname === item.href
                         ? 'bg-ps146-coral-600 text-white shadow-lg'
-                        : isScrolled
-                        ? 'text-white/90 hover:text-white hover:bg-white/10'
-                        : 'text-white/90 hover:text-white hover:bg-white/10'
+                        : 'text-ps146-navy-800 hover:text-ps146-coral-600 hover:bg-ps146-navy-50'
                     }`}
                   >
                     {item.name}
@@ -539,9 +518,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-ps146-coral-400 transition-colors duration-200 ${
-                isScrolled ? 'text-white' : 'text-white'
-              }`}
+              className="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg focus:outline-none focus:ring-2 focus:ring-ps146-coral-400 transition-colors duration-200 text-ps146-navy-800 hover:bg-ps146-navy-50"
             >
               <span className="sr-only">Open main menu</span>
               {isMobileMenuOpen ? (
