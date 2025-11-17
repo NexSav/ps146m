@@ -4,7 +4,6 @@ import {
   BookOpenIcon,
   ClockIcon,
   PhoneIcon,
-  DocumentTextIcon,
   GlobeAltIcon
 } from '@heroicons/react/24/outline';
 
