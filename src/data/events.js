@@ -252,6 +252,131 @@ const events = [
     endTime: "5:00 PM",
     description: "Registration for spring after-school programs",
     descriptionES: "Inscripción para programas de primavera después de clases"
+  },
+
+  // November 2025
+  {
+    id: 24,
+    title: "National School Psychologist Day",
+    titleES: "Día Nacional del Psicólogo Escolar",
+    date: new Date(2025, 10, 3),
+    category: "academic",
+    allDay: true,
+    description: "Celebrating our school psychologists",
+    descriptionES: "Celebrando a nuestros psicólogos escolares"
+  },
+  {
+    id: 25,
+    title: "Election Day - No Students in Attendance",
+    titleES: "Día de las elecciones - No hay estudiantes presentes",
+    date: new Date(2025, 10, 4),
+    category: "holiday",
+    allDay: true,
+    description: "School closed for students - Election Day",
+    descriptionES: "Escuela cerrada para estudiantes - Día de las elecciones"
+  },
+  {
+    id: 26,
+    title: "Virtual Parent-Teacher Conference - Half Day",
+    titleES: "Conferencia virtual de padres y maestros - Medio día",
+    date: new Date(2025, 10, 6),
+    category: "academic",
+    startTime: "12:20 PM",
+    endTime: "7:30 PM",
+    description: "Virtual Parent-Teacher Conference: 12:20 PM-2:20 PM and 4:30 PM-7:30 PM. HALF DAY FOR ALL STUDENTS",
+    descriptionES: "Conferencia virtual de padres y maestros: 12:20 PM-2:20 PM y 4:30 PM-7:30 PM. MEDIO DÍA para todos los estudiantes"
+  },
+  {
+    id: 27,
+    title: "NY Pride Day",
+    titleES: "Día del Orgullo de Nueva York",
+    date: new Date(2025, 10, 7),
+    category: "academic",
+    allDay: true,
+    description: "New York Pride Day celebration",
+    descriptionES: "Celebración del Día del Orgullo de Nueva York"
+  },
+  {
+    id: 28,
+    title: "Respect for Paraprofessional Day - Wear Blue",
+    titleES: "Día de Respeto al Paraprofesional - Vestir de azul",
+    date: new Date(2025, 10, 10),
+    category: "academic",
+    allDay: true,
+    description: "Show respect for our paraprofessionals - Wear Blue",
+    descriptionES: "Muestra respeto a nuestros paraprofesionales - Vestir de azul"
+  },
+  {
+    id: 29,
+    title: "Veteran's Day - School Closed",
+    titleES: "Día de los veteranos - Escuela cerrada",
+    date: new Date(2025, 10, 11),
+    category: "holiday",
+    allDay: true,
+    description: "School closed in observance of Veteran's Day",
+    descriptionES: "Escuela cerrada en conmemoración del Día de los veteranos"
+  },
+  {
+    id: 30,
+    title: "World Kindness Day",
+    titleES: "Día Mundial de la Amabilidad",
+    date: new Date(2025, 10, 13),
+    category: "academic",
+    allDay: true,
+    description: "Celebrating World Kindness Day",
+    descriptionES: "Celebrando el Día Mundial de la Amabilidad"
+  },
+  {
+    id: 31,
+    title: "Achievement Assembly - Students Only",
+    titleES: "Asamblea de Logros - Solo para estudiantes",
+    date: new Date(2025, 10, 14),
+    category: "academic",
+    startTime: "9:30 AM",
+    endTime: "9:50 AM",
+    description: "Achievement Assembly: 9:30 AM Grades K-2, 9:50 AM Grades 3-5 - For students only",
+    descriptionES: "Asamblea de Logros: 9:30 AM Grados K-2, 9:50 AM Grados 3-5 - Solo para estudiantes"
+  },
+  {
+    id: 32,
+    title: "Bio Bus Visit",
+    titleES: "Visita al Bio Bus",
+    date: new Date(2025, 10, 25),
+    category: "academic",
+    allDay: true,
+    description: "Bio Bus visits our school",
+    descriptionES: "El Bio Bus visita nuestra escuela"
+  },
+  {
+    id: 33,
+    title: "Bio Bus Visit & MACY's Day Parade",
+    titleES: "Visita al Bio Bus y Desfile del Día de Acción de Gracias de MACY",
+    date: new Date(2025, 10, 26),
+    category: "academic",
+    startTime: "8:15 AM",
+    endTime: "2:15 PM",
+    description: "Bio Bus Visit, MACY's Day Parade & Family Potluck. PA Meeting in Library @ 8:15. No After School Dismissal - ALL STUDENTS will be dismissed @2:15 p.m.",
+    descriptionES: "Visita al Bio Bus, Desfile del Día de Acción de Gracias de MACY y Convivio familiar compartida. Reunión de la Asociación de Padres en la Biblioteca a las 8:15 a.m. NO HABRÁ AFTER SCHOOL - SALIDA PARA TODOS LOS ESTUDIANTES es a las 2:15 p.m."
+  },
+  {
+    id: 34,
+    title: "Thanksgiving Day - No School",
+    titleES: "Día de Acción de Gracias - No hay clases",
+    date: new Date(2025, 10, 27),
+    category: "holiday",
+    allDay: true,
+    description: "School closed for Thanksgiving Day",
+    descriptionES: "Escuela cerrada por Día de Acción de Gracias"
+  },
+  {
+    id: 35,
+    title: "Thanksgiving Break - No School",
+    titleES: "Receso de Acción de Gracias - No hay clases",
+    date: new Date(2025, 10, 28),
+    category: "holiday",
+    allDay: true,
+    description: "School closed for Thanksgiving Break",
+    descriptionES: "Escuela cerrada por receso de Acción de Gracias"
   }
 ];
 

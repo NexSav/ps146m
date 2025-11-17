@@ -143,16 +143,19 @@ const SchoolCalendar = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ps146-navy-900 to-ps146-navy-800">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAgMy4zMS0yLjY5IDYtNiA2cy02LTIuNjktNi02IDIuNjktNiA2LTYgNiAyLjY5IDYgNnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ps146-gold-50 via-ps146-coral-50 to-white overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-coral-200/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-gold-200/20 rounded-full blur-3xl"></div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-ps146-coral-600 rounded-2xl mb-6 shadow-lg">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-ps146-coral-500 to-ps146-coral-600 rounded-2xl mb-6 shadow-lg">
               <CalendarIcon className="h-10 w-10 text-white" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">School Calendar</h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-ps146-navy-900 mb-6">School Calendar</h1>
             <div className="w-24 h-1.5 bg-ps146-coral-500 mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="text-xl md:text-2xl text-ps146-navy-800 max-w-3xl mx-auto leading-relaxed font-light">
               Stay informed about school events, holidays, and important dates throughout the academic year
             </p>
           </div>
@@ -498,59 +501,66 @@ const SchoolCalendar = () => {
         </div>
       )}
 
-      {/* Footer */}
-      <footer className="bg-ps146-navy-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Footer - Modern & Organized */}
+      <footer className="bg-gradient-to-br from-ps146-coral-50 to-ps146-coral-100 py-16 relative overflow-hidden">
+        {/* Playful decorative elements */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-ps146-gold-200/30 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-48 h-48 bg-ps146-coral-200/40 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-ps146-coral-600 rounded-xl flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 bg-gradient-to-br from-ps146-coral-500 to-ps146-coral-600 rounded-2xl flex items-center justify-center shadow-lg transform hover:rotate-6 transition-transform">
                   <span className="text-white font-bold text-lg">146</span>
                 </div>
                 <div>
-                  <div className="font-bold text-xl text-white">PS 146</div>
-                  <div className="text-sm text-gray-400">Anna M. Short</div>
+                  <div className="font-bold text-xl text-ps146-navy-900">PS 146</div>
+                  <div className="text-sm text-ps146-navy-600">Anna M. Short</div>
                 </div>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-ps146-navy-700 text-sm leading-relaxed">
                 Serving the East Harlem community with excellence in education and multicultural support.
               </p>
             </div>
 
             <div>
-              <h4 className="font-bold mb-4 text-white text-lg">Quick Links</h4>
-              <ul className="space-y-3 text-gray-400 text-sm">
-                <li><a href="/about" className="hover:text-ps146-coral-400 transition-colors">About Us</a></li>
-                <li><a href="/admissions" className="hover:text-ps146-coral-400 transition-colors">Admissions</a></li>
-                <li><a href="/lmc" className="hover:text-ps146-coral-400 transition-colors">Library</a></li>
-                <li><a href="/supply-lists" className="hover:text-ps146-coral-400 transition-colors">Supply Lists</a></li>
+              <h4 className="font-bold mb-4 text-ps146-navy-900 text-lg">Quick Links</h4>
+              <ul className="space-y-3 text-ps146-navy-700 text-sm">
+                <li><a href="/about" className="hover:text-ps146-coral-600 transition-colors">About Us</a></li>
+                <li><a href="/admissions" className="hover:text-ps146-coral-600 transition-colors">Admissions</a></li>
+                <li><a href="/lmc" className="hover:text-ps146-coral-600 transition-colors">Library</a></li>
+                <li><a href="/supply-lists" className="hover:text-ps146-coral-600 transition-colors">Supply Lists</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold mb-4 text-white text-lg">Resources</h4>
-              <ul className="space-y-3 text-gray-400 text-sm">
-                <li><a href="https://classroom.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-ps146-coral-400 transition-colors">Google Classroom</a></li>
-                <li><a href="https://www.classdojo.com" target="_blank" rel="noopener noreferrer" className="hover:text-ps146-coral-400 transition-colors">Class Dojo</a></li>
-                <li><a href="/school-calendar" className="hover:text-ps146-coral-400 transition-colors">School Calendar</a></li>
-                <li><a href="/news" className="hover:text-ps146-coral-400 transition-colors">News & Updates</a></li>
+              <h4 className="font-bold mb-4 text-ps146-navy-900 text-lg">Resources</h4>
+              <ul className="space-y-3 text-ps146-navy-700 text-sm">
+                <li><a href="https://classroom.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-ps146-coral-600 transition-colors">Google Classroom</a></li>
+                <li><a href="https://www.classdojo.com" target="_blank" rel="noopener noreferrer" className="hover:text-ps146-coral-600 transition-colors">Class Dojo</a></li>
+                <li><a href="/school-calendar" className="hover:text-ps146-coral-600 transition-colors">School Calendar</a></li>
+                <li><a href="/news" className="hover:text-ps146-coral-600 transition-colors">News & Updates</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold mb-4 text-white text-lg">Contact Info</h4>
-              <div className="space-y-3 text-gray-400 text-sm">
-                <p className="text-white">421 E. 106th Street</p>
-                <p className="text-white">New York, NY 10029</p>
-                <p className="mt-4 text-ps146-coral-400 font-semibold text-lg">
+              <h4 className="font-bold mb-4 text-ps146-navy-900 text-lg">Contact Info</h4>
+              <div className="space-y-3 text-ps146-navy-700 text-sm">
+                <p className="text-ps146-navy-900 font-medium">421 E. 106th Street</p>
+                <p className="text-ps146-navy-900 font-medium">New York, NY 10029</p>
+                <p className="mt-4 text-ps146-coral-600 font-bold text-lg">
                   (212) 860-5877
                 </p>
+                <a href="mailto:info@ps146.org" className="block text-ps146-coral-600 hover:text-ps146-coral-700 transition-colors font-medium">
+                  info@ps146.org
+                </a>
                 <p>Mon-Fri: 8:00AM-2:20PM</p>
               </div>
             </div>
           </div>
 
-          <div className="pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+          <div className="pt-8 border-t border-ps146-coral-300 text-center text-ps146-navy-600 text-sm">
             <p>&copy; 2024 PS 146 Anna M. Short. All Rights Reserved. | Proudly created with PS146.org</p>
           </div>
         </div>

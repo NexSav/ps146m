@@ -13,22 +13,16 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', href: '/' },
     {
-      name: 'About P.S.146',
+      name: 'About',
       href: '/about',
       image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80',
       megaDescription: 'Learn about our school\'s mission, values, and the dedicated team that makes PS 146 a special place for learning and growth.',
       dropdown: [
         {
-          name: 'Mission & Vision Statements',
+          name: 'Mission & Vision Statement',
           href: '/mission-vision',
           description: 'Discover our educational philosophy and commitment to academic excellence and community engagement.'
-        },
-        {
-          name: 'Our Staff',
-          href: '/staff',
-          description: 'Meet our experienced and passionate educators dedicated to student success.'
         },
         {
           name: "Principal's Message",
@@ -36,53 +30,47 @@ const Navbar = () => {
           description: 'A warm welcome from Dr. Mona Silfen, our school principal.'
         },
         {
+          name: 'Faculty & Staff Directory',
+          href: '/staff',
+          description: 'Meet our experienced and passionate educators dedicated to student success.'
+        },
+        {
           name: 'School Goals',
           href: '/school-goals',
           description: 'Explore our strategic objectives for student performance and community building.'
         },
+        {
+          name: 'Programs/Partnerships',
+          href: '/partnerships',
+          description: 'Explore our community partnerships and enrichment programs.'
+        },
+        {
+          name: 'Contact Us',
+          href: '/contact',
+          description: 'Get in touch with our school office and staff.'
+        },
       ]
     },
     {
-      name: 'Faculty/Staff',
-      href: '/faculty-staff',
-      image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80',
-      megaDescription: 'Access important resources and portals for PS 146 faculty and staff members.',
+      name: 'Calendar',
+      href: '/school-calendar',
+      image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80',
+      megaDescription: 'Stay up-to-date with important dates, events, and schedules at PS 146.',
       dropdown: [
         {
-          name: 'Staff Login',
-          href: 'https://ps146.org/wp-login.php?redirect_to=https%3A%2F%2Fps146.org%2Ffaculty-home%2F',
-          description: 'Secure access to the staff portal and resources.',
-          external: true
+          name: 'Important Upcoming Dates',
+          href: '/school-calendar',
+          description: 'View upcoming school events, activities, and important dates.'
         },
         {
-          name: 'NYCDoE TeachHub',
-          href: 'https://teachhub.schools.nyc',
-          description: 'NYC Department of Education TeachHub portal for educators.',
-          external: true
+          name: 'Book of the Month',
+          href: '/book-of-month',
+          description: 'Discover our monthly featured book selections.'
         },
         {
-          name: 'P.S. 146 E-mail',
-          href: 'https://outlook.office.com',
-          description: 'Access your PS 146 school email account.',
-          external: true
-        },
-        {
-          name: 'SESIS',
-          href: 'https://sesis.nycenet.edu',
-          description: 'Special Education Student Information System portal.',
-          external: true
-        },
-        {
-          name: 'DOE E-mail',
-          href: 'https://outlook.office.com',
-          description: 'NYC Department of Education email access.',
-          external: true
-        },
-        {
-          name: 'NYC Dept. of Ed. Site',
-          href: 'https://www.schools.nyc.gov',
-          description: 'Official NYC Department of Education website.',
-          external: true
+          name: 'NYC School Calendar 25-26',
+          href: '/school-calendar',
+          description: 'Official NYC DOE calendar for the 2025-2026 school year.'
         },
       ]
     },
@@ -93,25 +81,50 @@ const Navbar = () => {
       megaDescription: 'Stay updated with the latest news, announcements, and important information from PS 146.',
       dropdown: [
         {
-          name: 'School Cell Phone & Electronic Device Policy',
+          name: 'School Events Calendar',
+          href: '/school-calendar',
+          description: 'View our calendar of school events and activities.'
+        },
+        {
+          name: 'City Year Events',
+          href: '/city-year-events',
+          description: 'Information about City Year programs and events at our school.'
+        },
+        {
+          name: 'Cell Phone & Electronic Device Policy',
           href: 'https://drive.google.com/file/d/1MeZVzp2pzdupaUROlUv1l8rwFPnfCPD2/view',
           description: 'Review our school guidelines for electronic devices and cell phone usage.',
           external: true
         },
+      ]
+    },
+    {
+      name: 'Academics',
+      href: '/academics',
+      image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&q=80',
+      megaDescription: 'Explore academic resources and learning tools for our students.',
+      dropdown: [
         {
-          name: 'School Calendar',
-          href: '/school-calendar',
-          description: 'View important dates, holidays, and school events for the academic year.'
+          name: 'Learning Resources',
+          href: '/learning-resources',
+          description: 'Access educational resources and materials for students.'
         },
         {
-          name: 'Latest Announcements',
-          href: '/announcements',
-          description: 'Read the most recent updates and announcements from PS 146.'
+          name: 'Google Classroom',
+          href: 'https://classroom.google.com',
+          description: 'Access assignments and online classroom activities.',
+          external: true
+        },
+        {
+          name: 'NYC Reads',
+          href: 'https://www.nycreads.com',
+          description: 'NYC Department of Education reading initiative and resources.',
+          external: true
         },
       ]
     },
     {
-      name: 'L.M.C.',
+      name: 'Library',
       href: '/lmc',
       image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80',
       megaDescription: 'Explore our Library Media Center resources, catalog, and programs designed to foster literacy and research skills.',
@@ -120,22 +133,6 @@ const Navbar = () => {
           name: 'Library Media Center',
           href: '/lmc',
           description: 'Visit our comprehensive Library Media Center with books, resources, and learning spaces.'
-        },
-        {
-          name: 'Online Catalog (OPAC)',
-          href: 'http://library.nycenet.edu/common/welcome.jsp?site=1212',
-          description: 'Search our library collection and reserve books online.',
-          external: true
-        },
-        {
-          name: 'Roles and Responsibilities',
-          href: '/library-roles',
-          description: 'Learn about library staff responsibilities and student expectations.'
-        },
-        {
-          name: 'Vision, Mission & Program Plan',
-          href: '/library-mission',
-          description: 'Discover our library program goals and strategic initiatives.'
         },
       ]
     },
@@ -146,52 +143,36 @@ const Navbar = () => {
       megaDescription: 'Resources, information, and support for PS 146 parents and guardians to stay engaged in their child\'s education.',
       dropdown: [
         {
-          name: 'Admissions Process',
+          name: 'Remote Learning',
+          href: '/remote-learning',
+          description: 'Online learning resources and platforms for students.'
+        },
+        {
+          name: 'Library',
+          href: '/library',
+          description: 'Access library resources and information for parents.'
+        },
+        {
+          name: 'Admissions',
           href: '/admissions',
           description: 'Learn how to enroll your child at PS 146 with our open admissions policy.'
         },
         {
-          name: 'Supply Lists 2025-2026',
-          href: '/supply-lists',
-          description: 'Download grade-specific supply lists for the upcoming school year.'
-        },
-        {
-          name: 'Calendar of Events',
-          href: '/school-calendar',
-          description: 'View upcoming school events, activities, and important dates.'
-        },
-        {
-          name: 'Parent Association',
+          name: 'Parent Association (PA)',
           href: '/parent-association',
           description: 'Join our active parent community and get involved in school activities.'
         },
         {
-          name: 'Programs/Partnerships',
-          href: '/partnerships',
-          description: 'Explore our community partnerships and enrichment programs.'
+          name: 'NYC School Account',
+          href: 'https://www.schoolsaccount.nyc/',
+          description: 'Access your NYC Schools Account for student information.',
+          external: true
         },
         {
-          name: 'Parents Corner',
-          href: '/parents-corner',
-          description: 'Access helpful resources, tips, and information for families.'
-        },
-        {
-          name: 'Remote Learning',
-          href: '/remote-learning',
-          description: 'Online learning resources and platforms for students.',
-          subDropdown: [
-            {
-              name: 'Google Classroom',
-              href: 'https://classroom.google.com',
-              description: 'Access assignments and online classroom activities.',
-              external: true
-            },
-            {
-              name: 'Remote Learning Resources',
-              href: '/remote-learning-resources',
-              description: 'Comprehensive online learning tools and guides.'
-            },
-          ]
+          name: 'Cell Phone & Electronic Device Policy',
+          href: 'https://drive.google.com/file/d/1MeZVzp2pzdupaUROlUv1l8rwFPnfCPD2/view',
+          description: 'Review our school guidelines for electronic devices and cell phone usage.',
+          external: true
         },
       ]
     },
@@ -202,128 +183,25 @@ const Navbar = () => {
       megaDescription: 'Educational resources, learning tools, and fun activities for PS 146 students to enhance their learning experience.',
       dropdown: [
         {
-          name: 'StudentHub',
-          href: 'https://studenthub.schools.nyc',
-          description: 'NYC DoE StudentHub portal for student resources.',
+          name: 'Teach Hub',
+          href: 'https://teachhub.schools.nyc',
+          description: 'NYC Department of Education TeachHub portal.',
           external: true
         },
         {
-          name: 'Coding',
-          href: '/coding',
-          description: 'Learn programming and computer science skills.',
-          subDropdown: [
-            {
-              name: 'CODE.org',
-              href: 'https://code.org',
-              description: 'Free coding lessons and activities for all ages.',
-              external: true
-            },
-            {
-              name: 'Scratch',
-              href: 'https://scratch.mit.edu',
-              description: 'Create interactive stories, games, and animations.',
-              external: true
-            },
-          ]
+          name: 'Google Classroom',
+          href: 'https://classroom.google.com',
+          description: 'Access assignments and online classroom activities.',
+          external: true
         },
         {
-          name: 'Math',
-          href: '/math',
-          description: 'Mathematics practice and learning resources.',
-          subDropdown: [
-            {
-              name: 'EUREKA Math',
-              href: 'https://greatminds.org/math',
-              description: 'Comprehensive math curriculum and resources.',
-              external: true
-            },
-            {
-              name: 'Mathletics',
-              href: 'https://www.mathletics.com',
-              description: 'Engaging math practice and competitions.',
-              external: true
-            },
-          ]
-        },
-        {
-          name: 'Reading',
-          href: '/reading',
-          description: 'Reading comprehension and literacy tools.',
-          subDropdown: [
-            {
-              name: 'MyOn',
-              href: 'https://www.myon.com',
-              description: 'Digital library with thousands of books.',
-              external: true
-            },
-            {
-              name: 'Starfall',
-              href: 'https://www.starfall.com',
-              description: 'Interactive reading and phonics activities.',
-              external: true
-            },
-          ]
-        },
-        {
-          name: 'Educational Games',
-          href: '/games',
-          description: 'Fun and educational online games.',
-          subDropdown: [
-            {
-              name: 'ABCya!',
-              href: 'https://www.abcya.com',
-              description: 'Educational computer games for elementary students.',
-              external: true
-            },
-            {
-              name: 'Math Playground',
-              href: 'https://www.mathplayground.com',
-              description: 'Math games, logic puzzles, and problem solving.',
-              external: true
-            },
-            {
-              name: 'National Geographic Kids',
-              href: 'https://kids.nationalgeographic.com',
-              description: 'Explore the world with interactive content.',
-              external: true
-            },
-          ]
+          name: 'Other Resources',
+          href: '/student-resources',
+          description: 'Additional learning resources and educational tools for students.'
         },
       ]
     },
-    {
-      name: 'QuickLinks',
-      href: '/quicklinks',
-      image: 'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80',
-      megaDescription: 'Quick access to frequently used educational platforms and learning resources for students and families.',
-      dropdown: [
-        {
-          name: 'BrainPop',
-          href: 'https://www.brainpop.com',
-          description: 'Educational videos, quizzes, and interactive activities.',
-          external: true
-        },
-        {
-          name: 'BrainPop Jr!',
-          href: 'https://jr.brainpop.com',
-          description: 'Learning content designed for younger students.',
-          external: true
-        },
-        {
-          name: 'BrainPop ESL',
-          href: 'https://esl.brainpop.com',
-          description: 'Resources for English language learners.',
-          external: true
-        },
-        {
-          name: 'PebbleGo',
-          href: 'https://pebblego.com',
-          description: 'Research database for elementary students.',
-          external: true
-        },
-      ]
-    },
-    { name: 'CONTACT US', href: '/contact' },
+    { name: 'Faculty/Staff', href: '/faculty-staff' },
   ];
 
   return (
@@ -404,7 +282,7 @@ const Navbar = () => {
 
                             {/* Right side - Links */}
                             <div className="col-span-7">
-                              <div className="grid grid-cols-1 gap-2 max-h-96 overflow-y-auto pr-2">
+                              <div className="grid grid-cols-1 gap-2 max-h-[600px] overflow-y-auto pr-2">
                                 {item.dropdown.map((dropdownItem, dropdownIndex) => (
                                   <div key={dropdownIndex} className="relative">
                                     {dropdownItem.subDropdown ? (

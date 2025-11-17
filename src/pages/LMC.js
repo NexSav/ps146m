@@ -18,26 +18,26 @@ const LMC = () => {
       <Navbar />
 
       {/* Hero Section - Enhanced */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ps146-navy-900 via-ps146-navy-800 to-ps146-navy-900 overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-ps146-gold-50 via-ps146-coral-50 to-white overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-coral-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-coral-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-96 h-96 bg-ps146-coral-200/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-ps146-gold-200/20 rounded-full blur-3xl"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
-            <span className="inline-block text-ps146-coral-400 text-sm font-bold uppercase tracking-[0.3em] mb-4">
+            <span className="inline-block bg-ps146-coral-100 text-ps146-coral-600 text-sm font-bold uppercase tracking-[0.3em] mb-4 px-4 py-2 rounded-full">
               Library Media Center
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-ps146-navy-900 mb-6 leading-tight">
             Library Media Center
           </h1>
 
           <div className="w-24 h-1.5 bg-ps146-coral-500 mx-auto mb-8 shadow-lg shadow-ps146-coral-500/50"></div>
 
-          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-xl md:text-2xl text-ps146-navy-800 max-w-4xl mx-auto leading-relaxed font-light">
             Our Library Media Center is open to all faculty, staff, students and their parents/caregivers.
             We look forward to developing independent learners and bridging the home and school community
             through our Library Media Center Program.
@@ -63,11 +63,7 @@ const LMC = () => {
               <div className="w-16 h-1 bg-ps146-coral-500 mb-6"></div>
               <div className="space-y-6 text-ps146-neutral-700">
                 <div className="flex flex-col pb-4 border-b border-ps146-navy-100">
-                  <span className="font-bold text-ps146-navy-900 mb-2">Monday – Wednesday:</span>
-                  <span className="text-ps146-coral-600 font-semibold text-lg">8:00 AM – 3:10 PM</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-bold text-ps146-navy-900 mb-2">Thursday – Friday:</span>
+                  <span className="font-bold text-ps146-navy-900 mb-2">Monday – Friday:</span>
                   <span className="text-ps146-coral-600 font-semibold text-lg">8:00 AM – 2:20 PM</span>
                 </div>
               </div>
@@ -86,7 +82,6 @@ const LMC = () => {
                 <div>
                   <p className="font-bold text-ps146-navy-900 mb-3">Library Staff:</p>
                   <div className="space-y-2">
-                    <p className="text-lg font-medium text-ps146-coral-700">Mr. Powers</p>
                     <p className="text-lg font-medium text-ps146-coral-700">Ms. H. Rodriguez</p>
                     <p className="text-lg font-medium text-ps146-coral-700">Mr. V. Rijo</p>
                   </div>
@@ -96,11 +91,6 @@ const LMC = () => {
                     <PhoneIcon className="h-5 w-5 mr-3 text-ps146-coral-600" />
                     <span className="font-bold text-ps146-navy-900">Phone:</span>
                     <span className="ml-2 text-ps146-coral-600 font-semibold">(212) 860-5877 ext. 2090</span>
-                  </p>
-                  <p className="flex items-center">
-                    <DocumentTextIcon className="h-5 w-5 mr-3 text-ps146-coral-600" />
-                    <span className="font-bold text-ps146-navy-900">Fax:</span>
-                    <span className="ml-2 text-ps146-neutral-700">(212) 369-1225</span>
                   </p>
                 </div>
               </div>
@@ -199,50 +189,52 @@ const LMC = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-ps146-navy-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gradient-to-br from-ps146-coral-50 to-ps146-coral-100 py-16 relative overflow-hidden">
+        {/* Playful decorative elements */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-ps146-gold-200/30 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-48 h-48 bg-ps146-coral-200/40 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-ps146-coral-600 rounded-xl flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 bg-gradient-to-br from-ps146-coral-500 to-ps146-coral-600 rounded-2xl flex items-center justify-center shadow-lg transform hover:rotate-6 transition-transform">
                   <span className="text-white font-bold text-lg">146</span>
                 </div>
                 <div>
-                  <div className="font-bold text-xl text-white">PS 146</div>
-                  <div className="text-sm text-gray-400">Anna M. Short</div>
+                  <div className="font-bold text-xl text-ps146-navy-900">PS 146</div>
+                  <div className="text-sm text-ps146-navy-600">Anna M. Short</div>
                 </div>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-ps146-navy-700 text-sm leading-relaxed">
                 Serving the East Harlem community with excellence in education and multicultural support.
               </p>
             </div>
 
             <div>
-              <h4 className="font-bold mb-4 text-white text-lg">Quick Links</h4>
-              <ul className="space-y-3 text-gray-400 text-sm">
-                <li><a href="/" className="hover:text-ps146-coral-400 transition-colors">Home</a></li>
-                <li><a href="/mission-vision" className="hover:text-ps146-coral-400 transition-colors">Mission & Vision</a></li>
-                <li><a href="/library" className="hover:text-ps146-coral-400 transition-colors">Library Media Center</a></li>
-                <li><a href="/supply-lists" className="hover:text-ps146-coral-400 transition-colors">Supply Lists</a></li>
+              <h4 className="font-bold mb-4 text-ps146-navy-900 text-lg">Quick Links</h4>
+              <ul className="space-y-3 text-ps146-navy-700 text-sm">
+                <li><a href="/" className="hover:text-ps146-coral-600 transition-colors">Home</a></li>
+                <li><a href="/mission-vision" className="hover:text-ps146-coral-600 transition-colors">Mission & Vision</a></li>
+                <li><a href="/library" className="hover:text-ps146-coral-600 transition-colors">Library Media Center</a></li>
+                <li><a href="/supply-lists" className="hover:text-ps146-coral-600 transition-colors">Supply Lists</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold mb-4 text-white text-lg">Library Hours</h4>
-              <ul className="space-y-3 text-gray-400 text-sm">
-                <li>Mon-Wed: 8:00 AM - 3:10 PM</li>
-                <li>Thu-Fri: 8:00 AM - 2:20 PM</li>
+              <h4 className="font-bold mb-4 text-ps146-navy-900 text-lg">Library Hours</h4>
+              <ul className="space-y-3 text-ps146-navy-700 text-sm">
+                <li>Mon-Fri: 8:00 AM - 2:20 PM</li>
                 <li>Phone: Ext. 2090</li>
-                <li>Fax: (212) 369-1225</li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold mb-4 text-white text-lg">Contact Info</h4>
-              <div className="space-y-3 text-gray-400 text-sm">
-                <p className="text-white">421 E. 106th Street</p>
-                <p className="text-white">New York, NY 10029</p>
-                <p className="mt-4 text-ps146-coral-400 font-semibold text-lg">
+              <h4 className="font-bold mb-4 text-ps146-navy-900 text-lg">Contact Info</h4>
+              <div className="space-y-3 text-ps146-navy-700 text-sm">
+                <p className="text-ps146-navy-900 font-medium">421 E. 106th Street</p>
+                <p className="text-ps146-navy-900 font-medium">New York, NY 10029</p>
+                <p className="mt-4 text-ps146-coral-600 font-bold text-lg">
                   (212) 860-5877
                 </p>
                 <p>Mon-Fri: 8:00AM-2:20PM</p>
@@ -250,7 +242,7 @@ const LMC = () => {
             </div>
           </div>
 
-          <div className="pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+          <div className="pt-8 border-t border-ps146-coral-300 text-center text-ps146-navy-600 text-sm">
             <p>&copy; 2024 PS 146 Anna M. Short. All Rights Reserved. | Proudly created with PS146.org</p>
           </div>
         </div>
