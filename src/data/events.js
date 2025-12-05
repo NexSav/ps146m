@@ -24,41 +24,143 @@ const events = [
     descriptionES: "Escuela cerrada por festividad de Acción de Gracias"
   },
 
-  // December 2024
+  // December 2025
   {
     id: 3,
-    title: "Winter Break Begins",
-    titleES: "Comienza el receso de invierno",
-    date: new Date(2024, 11, 23),
-    category: "holiday",
+    title: "Spirit Animal Day - Wear your favorite animal print",
+    titleES: "Día del Espíritu Animal - Lleva tu estampado animal favorito",
+    date: new Date(2025, 11, 3),
+    category: "academic",
     allDay: true,
-    description: "Last day before winter break",
-    descriptionES: "Último día antes del receso de invierno"
+    description: "Wear your favorite animal print or an animal on your shirt",
+    descriptionES: "Lleva tu estampado animal favorito o un animal en tu camisa"
   },
   {
     id: 4,
-    title: "Winter Break - No School",
-    titleES: "Receso de invierno - No hay clases",
-    date: new Date(2024, 11, 24),
-    category: "holiday",
-    allDay: true,
-    description: "School closed for winter break",
-    descriptionES: "Escuela cerrada por receso de invierno"
+    title: "TEINSIE Achievement Assembly",
+    titleES: "Asamblea de logros TEINSIE",
+    date: new Date(2025, 11, 5),
+    category: "academic",
+    startTime: "9:30 AM",
+    endTime: "9:50 AM",
+    description: "TEINSIE Achievement Assembly: 9:30 AM Grades K-2, 9:50 AM Grades 3-5 (students only)",
+    descriptionES: "Asamblea de logros TEINSIE: 9:30 a.m. Grados K-2, 9:50 a.m. Grados 3-5 (solo estudiantes)"
   },
   {
     id: 5,
-    title: "Christmas Day - No School",
-    titleES: "Día de Navidad - No hay clases",
-    date: new Date(2024, 11, 25),
+    title: "Twinsie Tuesday",
+    titleES: "Martes de gemelos",
+    date: new Date(2025, 11, 9),
+    category: "academic",
+    allDay: true,
+    description: "Twinsie Tuesday - Spirit Day",
+    descriptionES: "Martes de gemelos - Día del espíritu"
+  },
+  {
+    id: 6,
+    title: "Family Friday - PA Bake Sale",
+    titleES: "Viernes Familiar - Venta de Pasteles de la Asociación de Padres",
+    date: new Date(2025, 11, 12),
+    category: "pta",
+    startTime: "8:00 AM",
+    endTime: "8:45 AM",
+    description: "Family Friday with PA Bake Sale from 8:00 A.M. - 8:45 A.M.",
+    descriptionES: "Viernes Familiar con Venta de Pasteles de la Asociación de Padres de 8:00 a.m. - 8:45 a.m."
+  },
+  {
+    id: 7,
+    title: "P.A Meeting in the Library",
+    titleES: "Reunión de la Asociación de Padres en la biblioteca",
+    date: new Date(2025, 11, 17),
+    category: "pta",
+    startTime: "8:15 AM",
+    description: "P.A Meeting in the library at 8:15 A.M.",
+    descriptionES: "Reunión de la Asociación de Padres en la biblioteca a las 8:15 a.m."
+  },
+  {
+    id: 8,
+    title: "DMF Youth After School Performance",
+    titleES: "Presentación extraescolar de jóvenes DMF",
+    date: new Date(2025, 11, 17),
+    category: "afterSchool",
+    startTime: "4:00 PM",
+    description: "DMF Youth After School Performance at 4:00 P.M.",
+    descriptionES: "Presentación extraescolar de jóvenes DMF a las 4:00 p.m."
+  },
+  {
+    id: 9,
+    title: "Winter Luncheon for Students + 1 Parent/Guardian",
+    titleES: "Almuerzo de invierno para estudiantes + 1 padre/tutor",
+    date: new Date(2025, 11, 23),
+    category: "academic",
+    allDay: true,
+    description: "Winter Luncheon for Students + 1 Parent/Guardian - NO AFTERSCHOOL - Pajama Day",
+    descriptionES: "Almuerzo de invierno para estudiantes + 1 padre/tutor - NO AFTERSCHOOL - Día de Pijamas"
+  },
+  {
+    id: 10,
+    title: "Winter Recess",
+    titleES: "Receso de invierno",
+    date: new Date(2025, 11, 24),
     category: "holiday",
     allDay: true,
-    description: "School closed for Christmas",
-    descriptionES: "Escuela cerrada por Navidad"
+    description: "School closed for winter recess",
+    descriptionES: "Escuela cerrada por receso de invierno"
+  },
+  {
+    id: 11,
+    title: "Winter Recess",
+    titleES: "Receso de invierno",
+    date: new Date(2025, 11, 25),
+    category: "holiday",
+    allDay: true,
+    description: "School closed for winter recess",
+    descriptionES: "Escuela cerrada por receso de invierno"
+  },
+  {
+    id: 12,
+    title: "Winter Recess",
+    titleES: "Receso de invierno",
+    date: new Date(2025, 11, 26),
+    category: "holiday",
+    allDay: true,
+    description: "School closed for winter recess",
+    descriptionES: "Escuela cerrada por receso de invierno"
+  },
+  {
+    id: 13,
+    title: "Winter Recess",
+    titleES: "Receso de invierno",
+    date: new Date(2025, 11, 27),
+    category: "holiday",
+    allDay: true,
+    description: "School closed for winter recess",
+    descriptionES: "Escuela cerrada por receso de invierno"
+  },
+  {
+    id: 14,
+    title: "Winter Recess",
+    titleES: "Receso de invierno",
+    date: new Date(2025, 11, 30),
+    category: "holiday",
+    allDay: true,
+    description: "School closed for winter recess",
+    descriptionES: "Escuela cerrada por receso de invierno"
+  },
+  {
+    id: 15,
+    title: "Extra Yarn by Mac Barnett - Book of the Month",
+    titleES: "Extra Yarn por Mac Barnett - Libro del mes",
+    date: new Date(2025, 11, 30),
+    category: "academic",
+    allDay: true,
+    description: "Extra Yarn by Mac Barnett - Book of the Month",
+    descriptionES: "Extra Yarn por Mac Barnett - Libro del mes"
   },
 
   // January 2025
   {
-    id: 6,
+    id: 16,
     title: "New Year's Day - No School",
     titleES: "Día de Año Nuevo - No hay clases",
     date: new Date(2025, 0, 1),
@@ -68,7 +170,7 @@ const events = [
     descriptionES: "Escuela cerrada por Día de Año Nuevo"
   },
   {
-    id: 7,
+    id: 17,
     title: "School Resumes",
     titleES: "Regresan las clases",
     date: new Date(2025, 0, 6),
@@ -78,7 +180,7 @@ const events = [
     descriptionES: "Los estudiantes regresan del receso de invierno"
   },
   {
-    id: 8,
+    id: 18,
     title: "Martin Luther King Jr. Day - No School",
     titleES: "Día de Martin Luther King Jr. - No hay clases",
     date: new Date(2025, 0, 20),
@@ -90,7 +192,7 @@ const events = [
 
   // February 2025
   {
-    id: 9,
+    id: 19,
     title: "Midwinter Break - No School",
     titleES: "Receso de medio invierno - No hay clases",
     date: new Date(2025, 1, 17),
@@ -100,7 +202,7 @@ const events = [
     descriptionES: "Escuela cerrada por receso de medio invierno"
   },
   {
-    id: 10,
+    id: 20,
     title: "Midwinter Break - No School",
     titleES: "Receso de medio invierno - No hay clases",
     date: new Date(2025, 1, 18),
@@ -110,7 +212,7 @@ const events = [
     descriptionES: "Escuela cerrada por receso de medio invierno"
   },
   {
-    id: 11,
+    id: 21,
     title: "Midwinter Break - No School",
     titleES: "Receso de medio invierno - No hay clases",
     date: new Date(2025, 1, 19),
@@ -120,7 +222,7 @@ const events = [
     descriptionES: "Escuela cerrada por receso de medio invierno"
   },
   {
-    id: 12,
+    id: 22,
     title: "Midwinter Break - No School",
     titleES: "Receso de medio invierno - No hay clases",
     date: new Date(2025, 1, 20),
@@ -130,7 +232,7 @@ const events = [
     descriptionES: "Escuela cerrada por receso de medio invierno"
   },
   {
-    id: 13,
+    id: 23,
     title: "Midwinter Break - No School",
     titleES: "Receso de medio invierno - No hay clases",
     date: new Date(2025, 1, 21),
@@ -142,7 +244,7 @@ const events = [
 
   // March 2025
   {
-    id: 14,
+    id: 24,
     title: "Parent-Teacher Conferences",
     titleES: "Conferencias de padres y maestros",
     date: new Date(2025, 2, 14),
@@ -155,7 +257,7 @@ const events = [
 
   // April 2025
   {
-    id: 15,
+    id: 25,
     title: "Spring Break - No School",
     titleES: "Receso de primavera - No hay clases",
     date: new Date(2025, 3, 14),
@@ -165,7 +267,7 @@ const events = [
     descriptionES: "Escuela cerrada por receso de primavera"
   },
   {
-    id: 16,
+    id: 26,
     title: "Spring Break - No School",
     titleES: "Receso de primavera - No hay clases",
     date: new Date(2025, 3, 15),
@@ -175,7 +277,7 @@ const events = [
     descriptionES: "Escuela cerrada por receso de primavera"
   },
   {
-    id: 17,
+    id: 27,
     title: "Spring Break - No School",
     titleES: "Receso de primavera - No hay clases",
     date: new Date(2025, 3, 16),
@@ -185,7 +287,7 @@ const events = [
     descriptionES: "Escuela cerrada por receso de primavera"
   },
   {
-    id: 18,
+    id: 28,
     title: "Spring Break - No School",
     titleES: "Receso de primavera - No hay clases",
     date: new Date(2025, 3, 17),
@@ -195,7 +297,7 @@ const events = [
     descriptionES: "Escuela cerrada por receso de primavera"
   },
   {
-    id: 19,
+    id: 29,
     title: "Spring Break - No School",
     titleES: "Receso de primavera - No hay clases",
     date: new Date(2025, 3, 18),
@@ -207,7 +309,7 @@ const events = [
 
   // May 2025
   {
-    id: 20,
+    id: 30,
     title: "Memorial Day - No School",
     titleES: "Día de los Caídos - No hay clases",
     date: new Date(2025, 4, 26),
@@ -219,7 +321,7 @@ const events = [
 
   // June 2025
   {
-    id: 21,
+    id: 31,
     title: "Last Day of School",
     titleES: "Último día de clases",
     date: new Date(2025, 5, 26),
@@ -231,10 +333,10 @@ const events = [
 
   // Sample PTA and After-School Events
   {
-    id: 22,
+    id: 32,
     title: "PTA Meeting",
     titleES: "Reunión de PTA",
-    date: new Date(2024, 11, 12),
+    date: new Date(2025, 11, 12),
     category: "pta",
     startTime: "6:00 PM",
     endTime: "7:30 PM",
@@ -243,7 +345,7 @@ const events = [
     location: "School Auditorium"
   },
   {
-    id: 23,
+    id: 33,
     title: "After-School Program Registration",
     titleES: "Inscripción para programa después de clases",
     date: new Date(2025, 0, 15),
@@ -256,7 +358,7 @@ const events = [
 
   // November 2025
   {
-    id: 24,
+    id: 34,
     title: "National School Psychologist Day",
     titleES: "Día Nacional del Psicólogo Escolar",
     date: new Date(2025, 10, 3),
@@ -266,7 +368,7 @@ const events = [
     descriptionES: "Celebrando a nuestros psicólogos escolares"
   },
   {
-    id: 25,
+    id: 35,
     title: "Election Day - No Students in Attendance",
     titleES: "Día de las elecciones - No hay estudiantes presentes",
     date: new Date(2025, 10, 4),
@@ -276,7 +378,7 @@ const events = [
     descriptionES: "Escuela cerrada para estudiantes - Día de las elecciones"
   },
   {
-    id: 26,
+    id: 36,
     title: "Virtual Parent-Teacher Conference - Half Day",
     titleES: "Conferencia virtual de padres y maestros - Medio día",
     date: new Date(2025, 10, 6),
@@ -287,7 +389,7 @@ const events = [
     descriptionES: "Conferencia virtual de padres y maestros: 12:20 PM-2:20 PM y 4:30 PM-7:30 PM. MEDIO DÍA para todos los estudiantes"
   },
   {
-    id: 27,
+    id: 37,
     title: "NY Pride Day",
     titleES: "Día del Orgullo de Nueva York",
     date: new Date(2025, 10, 7),
@@ -297,7 +399,7 @@ const events = [
     descriptionES: "Celebración del Día del Orgullo de Nueva York"
   },
   {
-    id: 28,
+    id: 38,
     title: "Respect for Paraprofessional Day - Wear Blue",
     titleES: "Día de Respeto al Paraprofesional - Vestir de azul",
     date: new Date(2025, 10, 10),
@@ -307,7 +409,7 @@ const events = [
     descriptionES: "Muestra respeto a nuestros paraprofesionales - Vestir de azul"
   },
   {
-    id: 29,
+    id: 39,
     title: "Veteran's Day - School Closed",
     titleES: "Día de los veteranos - Escuela cerrada",
     date: new Date(2025, 10, 11),
@@ -317,7 +419,7 @@ const events = [
     descriptionES: "Escuela cerrada en conmemoración del Día de los veteranos"
   },
   {
-    id: 30,
+    id: 40,
     title: "World Kindness Day",
     titleES: "Día Mundial de la Amabilidad",
     date: new Date(2025, 10, 13),
@@ -327,7 +429,7 @@ const events = [
     descriptionES: "Celebrando el Día Mundial de la Amabilidad"
   },
   {
-    id: 31,
+    id: 41,
     title: "Achievement Assembly - Students Only",
     titleES: "Asamblea de Logros - Solo para estudiantes",
     date: new Date(2025, 10, 14),
@@ -338,7 +440,7 @@ const events = [
     descriptionES: "Asamblea de Logros: 9:30 AM Grados K-2, 9:50 AM Grados 3-5 - Solo para estudiantes"
   },
   {
-    id: 32,
+    id: 42,
     title: "Bio Bus Visit",
     titleES: "Visita al Bio Bus",
     date: new Date(2025, 10, 25),
@@ -348,7 +450,7 @@ const events = [
     descriptionES: "El Bio Bus visita nuestra escuela"
   },
   {
-    id: 33,
+    id: 43,
     title: "Bio Bus Visit & MACY's Day Parade",
     titleES: "Visita al Bio Bus y Desfile del Día de Acción de Gracias de MACY",
     date: new Date(2025, 10, 26),
@@ -359,7 +461,7 @@ const events = [
     descriptionES: "Visita al Bio Bus, Desfile del Día de Acción de Gracias de MACY y Convivio familiar compartida. Reunión de la Asociación de Padres en la Biblioteca a las 8:15 a.m. NO HABRÁ AFTER SCHOOL - SALIDA PARA TODOS LOS ESTUDIANTES es a las 2:15 p.m."
   },
   {
-    id: 34,
+    id: 44,
     title: "Thanksgiving Day - No School",
     titleES: "Día de Acción de Gracias - No hay clases",
     date: new Date(2025, 10, 27),
@@ -369,7 +471,7 @@ const events = [
     descriptionES: "Escuela cerrada por Día de Acción de Gracias"
   },
   {
-    id: 35,
+    id: 45,
     title: "Thanksgiving Break - No School",
     titleES: "Receso de Acción de Gracias - No hay clases",
     date: new Date(2025, 10, 28),

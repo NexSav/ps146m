@@ -241,11 +241,11 @@ const SchoolGoals = () => {
             Join us in our mission to achieve excellence and create a nurturing environment for every student.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/admissions" className="inline-flex items-center justify-center bg-ps146-coral-600 hover:bg-ps146-coral-700 text-white px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
+            <a href="https://www.schools.nyc.gov/enrollment/enrollment-help/family-welcome-centers" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-ps146-coral-600 hover:bg-ps146-coral-700 text-white px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
               <span>Apply Now</span>
               <ArrowRightIcon className="ml-2 h-5 w-5" />
             </a>
-            <a href="/contact" className="inline-flex items-center justify-center border-2 border-ps146-navy-700 text-ps146-navy-700 hover:bg-ps146-navy-700 hover:text-white px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300">
+            <a href="mailto:info@ps146.org" className="inline-flex items-center justify-center border-2 border-ps146-navy-700 text-ps146-navy-700 hover:bg-ps146-navy-700 hover:text-white px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300">
               Contact Us
             </a>
           </div>

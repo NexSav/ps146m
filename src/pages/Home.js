@@ -73,13 +73,13 @@ const Home = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
-                <a href="/admissions" className="group inline-flex items-center justify-center bg-ps146-coral-600 hover:bg-ps146-coral-700 text-white px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg">
+                <a href="https://www.schools.nyc.gov/enrollment/enrollment-help/family-welcome-centers" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center bg-ps146-coral-600 hover:bg-ps146-coral-700 text-white px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg">
                   <span>Apply Now</span>
                   <ArrowRightIcon className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
-                <a href="/about" className="group inline-flex items-center justify-center border-2 border-white/80 text-white hover:bg-white hover:text-ps146-navy-900 px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300 hover:shadow-2xl backdrop-blur-sm">
+                <a href="/mission-vision" className="group inline-flex items-center justify-center border-2 border-white/80 text-white hover:bg-white hover:text-ps146-navy-900 px-10 py-5 text-lg font-bold rounded-xl transition-all duration-300 hover:shadow-2xl backdrop-blur-sm">
                   <span>Learn More</span>
-                  <ArrowRightIcon className="ml-2 h-5 w-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                  <ArrowRightIcon className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
@@ -410,10 +410,10 @@ const Home = () => {
               <div className="p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Multilingual Support</h3>
                 <p className="text-white/95 mb-6 leading-relaxed">
-                  We support families in Arabic, Chinese, French, Spanish, and Urdu.
+                  We support families in all languages to ensure every family feels welcome.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {['العربية', '中文', 'Français', 'Español', 'اردو'].map((lang, index) => (
+                  {['All Languages Supported', 'Arabic', 'Chinese', 'French', 'Spanish', 'Urdu'].map((lang, index) => (
                     <span key={index} className="bg-white/25 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold hover:bg-white/35 transition-colors">
                       {lang}
                     </span>
@@ -473,7 +473,7 @@ const Home = () => {
                   Get Directions
                   <ArrowRightIcon className="ml-2 h-5 w-5" />
                 </a>
-                <a href="/contact" className="inline-flex items-center justify-center border-2 border-ps146-coral-600 text-ps146-coral-600 hover:bg-ps146-coral-600 hover:text-white px-8 py-4 font-bold rounded-xl transition-all shadow-md hover:shadow-lg">
+                <a href="mailto:info@ps146.org" className="inline-flex items-center justify-center bg-ps146-coral-100 text-ps146-coral-600 hover:bg-ps146-coral-600 hover:text-white px-8 py-4 font-bold rounded-xl transition-all shadow-md hover:shadow-lg border-2 border-ps146-coral-600">
                   Contact Us
                 </a>
               </div>

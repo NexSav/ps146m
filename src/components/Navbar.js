@@ -124,19 +124,6 @@ const Navbar = () => {
       ]
     },
     {
-      name: 'Library',
-      href: '/lmc',
-      image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80',
-      megaDescription: 'Explore our Library Media Center resources, catalog, and programs designed to foster literacy and research skills.',
-      dropdown: [
-        {
-          name: 'Library Media Center',
-          href: '/lmc',
-          description: 'Visit our comprehensive Library Media Center with books, resources, and learning spaces.'
-        },
-      ]
-    },
-    {
       name: 'Parents',
       href: '/parents',
       image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80',

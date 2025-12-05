@@ -21,7 +21,6 @@ const StaffDirectory = () => {
     { firstName: 'Daniel', lastName: 'Cortes', email: 'DCortes@ps146.org', title: 'Assistant Principal', position: 'Administrator', department: 'Administration' },
 
     // Teachers
-    { firstName: 'Diane', lastName: 'Atallah', email: 'DAtallah@ps146.org', title: 'Teacher', position: 'ENL', department: 'Teachers' },
     { firstName: 'Jillian', lastName: 'Best', email: 'JBest@ps146.org', title: 'Teacher', position: 'UPK', department: 'Teachers' },
     { firstName: 'Darryl', lastName: 'Browne', email: 'dbrowne@ps146.org', title: 'Teacher', position: 'Upper Grade', department: 'Teachers' },
     { firstName: 'James', lastName: 'Corbo', email: 'jcorbo@ps146.org', title: 'Teacher', position: 'Bilingual Speech', department: 'Teachers' },
@@ -45,6 +44,13 @@ const StaffDirectory = () => {
     { firstName: 'Danette', lastName: 'Suarez', email: 'dsuarez@ps146.org', title: 'Teacher', position: '2nd Grade', department: 'Teachers' },
     { firstName: 'Veronica', lastName: 'Torres', email: 'VTorres@ps146.org', title: 'Teacher', position: 'First/Second Grade', department: 'Teachers' },
     { firstName: 'Julianna', lastName: 'Mamone', email: 'JMamone@ps146.org', title: 'Teacher', position: '', department: 'Teachers' },
+    { firstName: 'Samantha', lastName: 'Fastlich', email: 'SFastlich@ps146.org', title: 'Teacher', position: '5th Grade', department: 'Teachers' },
+    { firstName: 'Amanda', lastName: 'Bohlmann', email: 'ABohlmann@ps146.org', title: 'Teacher', position: 'Kindergarten', department: 'Teachers' },
+    { firstName: 'Venus', lastName: 'McGee', email: 'VMcGee@ps146.org', title: 'Teacher', position: '2nd Grade', department: 'Teachers' },
+    { firstName: 'Cameron', lastName: 'Smith', email: 'Cameron@ps146.org', title: 'Teacher', position: '2nd Grade', department: 'Teachers' },
+    { firstName: 'Alicia', lastName: 'Kellier', email: 'AKellier@ps146.org', title: 'Teacher', position: '3rd Grade', department: 'Teachers' },
+    { firstName: 'Crista', lastName: 'DeRoma', email: 'CDeRoma@ps146.org', title: 'Teacher', position: '3rd Grade', department: 'Teachers' },
+    { firstName: 'Nicole', lastName: 'Levin', email: 'NLevin@ps146.org', title: 'Teacher', position: 'ENL', department: 'Teachers' },
 
     // Speech Providers
     { firstName: 'Jessica', lastName: 'Star', email: 'JStar@ps146.org', title: 'Speech Provider', position: 'Monolingual Speech', department: 'Speech Providers' },
@@ -65,6 +71,7 @@ const StaffDirectory = () => {
     { firstName: 'Alberto', lastName: 'Bocus', email: 'abocus@ps146.org', title: 'Cluster Teacher', position: 'Physical Education', department: 'Cluster Teachers' },
     { firstName: 'Francesca', lastName: 'Capobianco', email: 'FCapobianco@ps146.org', title: 'Cluster Teacher', position: 'Science', department: 'Cluster Teachers' },
     { firstName: 'Rebecca', lastName: 'Jung', email: 'RJung@ps146.org', title: 'Cluster Teacher', position: 'Technology', department: 'Cluster Teachers' },
+    { firstName: 'Tyler', lastName: 'Hone', email: 'THone@ps146.org', title: 'Cluster Teacher', position: '', department: 'Cluster Teachers' },
 
     // Support Staff
     { firstName: 'Jennifer', lastName: 'Schwam', email: 'JSchwam@ps146.org', title: 'Social Worker', position: '', department: 'Support Staff' },
@@ -72,6 +79,8 @@ const StaffDirectory = () => {
     { firstName: 'Alanna', lastName: 'Fogarty', email: 'AFogarty@ps146.org', title: 'Occupational Therapist', position: '', department: 'Support Staff' },
     { firstName: 'Marlene', lastName: 'Russell', email: 'mrussell@ps146.org', title: 'Family Worker', position: 'IEP Team', department: 'Support Staff' },
     { firstName: 'Jasmine', lastName: 'Marte', email: 'JMarte@ps146.org', title: 'Family Worker', position: 'EIP Team', department: 'Support Staff' },
+    { firstName: 'Dallas', lastName: 'Hill', email: 'DHill@ps146.org', title: 'Community School Coordinator', position: 'City Year', department: 'Support Staff' },
+    { firstName: 'Lesly', lastName: 'Serrano', email: 'LSerrano@ps146.org', title: 'Community Coordinator', position: '', department: 'Support Staff' },
 
     // Office Staff
     { firstName: 'Tania', lastName: 'Ariza', email: 'TAriza@ps146.org', title: 'School Aide', position: 'Main Office', department: 'Office Staff' },
@@ -99,6 +108,9 @@ const StaffDirectory = () => {
     { firstName: 'Melinie', lastName: 'Gonzales', email: 'mgonzales@ps146.org', title: 'D75 Para', position: '', department: 'Paraprofessionals' },
     { firstName: 'Dawn', lastName: 'Johns', email: 'DJohns@ps146.org', title: 'D75 Para', position: '', department: 'Paraprofessionals' },
     { firstName: 'Migna', lastName: 'Rodriguez', email: 'MRodriguez@ps146.org', title: 'D75 Para', position: '', department: 'Paraprofessionals' },
+    { firstName: 'Christina', lastName: 'Elia', email: 'CElia@ps146.org', title: 'Paraprofessional', position: '', department: 'Paraprofessionals' },
+    { firstName: 'Soraya', lastName: 'Santiago', email: 'SSantiago@ps146.org', title: 'Paraprofessional', position: '', department: 'Paraprofessionals' },
+    { firstName: 'Shannen', lastName: 'Goyco', email: 'SGoyco@ps146.org', title: 'Paraprofessional', position: '', department: 'Paraprofessionals' },
 
     // D75 Coordinator
     { firstName: 'Bree', lastName: 'Carnovale', email: 'BCarnovale@ps146.org', title: 'D75 Coordinator', position: '', department: 'Special Education' }
@@ -296,7 +308,7 @@ const StaffDirectory = () => {
                 <li><a href="/admissions" className="hover:text-ps146-coral-600 transition-colors">Admissions</a></li>
                 <li><a href="/lmc" className="hover:text-ps146-coral-600 transition-colors">Library Media Center</a></li>
                 <li><a href="/supply-lists" className="hover:text-ps146-coral-600 transition-colors">Supply Lists</a></li>
-                <li><a href="/contact" className="hover:text-ps146-coral-600 transition-colors">Contact Us</a></li>
+                <li><a href="mailto:info@ps146.org" className="hover:text-ps146-coral-600 transition-colors">Contact Us</a></li>
               </ul>
             </div>
 
