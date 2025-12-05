@@ -65,7 +65,7 @@ const ComingSoon = () => {
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center border-2 border-white text-white hover:bg-white hover:text-ps146-navy-900 px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300"
+              className="inline-flex items-center justify-center bg-ps146-coral-100 border-2 border-ps146-coral-600 text-ps146-coral-600 hover:bg-ps146-coral-600 hover:text-white px-8 py-4 text-lg font-bold rounded-xl transition-all duration-300"
             >
               <EnvelopeIcon className="h-5 w-5 mr-2" />
               Contact Us
