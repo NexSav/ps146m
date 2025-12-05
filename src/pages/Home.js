@@ -346,7 +346,7 @@ const Home = () => {
             {[
               { number: '600+', label: 'Students', icon: UsersIcon, color: 'coral' },
               { number: '50+', label: 'Faculty & Staff', icon: UsersIcon, color: 'gold' },
-              { number: '5', label: 'Languages Supported', icon: BookOpenIcon, color: 'coral' },
+              { number: 'All', label: 'Languages Supported', icon: BookOpenIcon, color: 'coral' },
               { number: '2017', label: 'Hornets Champions', icon: TrophyIcon, color: 'gold' }
             ].map((stat, index) => (
               <div key={index} className="text-center bg-white p-8 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-ps146-coral-200">
@@ -410,14 +410,9 @@ const Home = () => {
               <div className="p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Multilingual Support</h3>
                 <p className="text-white/95 mb-6 leading-relaxed">
-                  We support families in all languages to ensure every family feels welcome.
+                  We support families in All languages to ensure every family feels welcome.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {['All Languages Supported', 'Arabic', 'Chinese', 'French', 'Spanish', 'Urdu'].map((lang, index) => (
-                    <span key={index} className="bg-white/25 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold hover:bg-white/35 transition-colors">
-                      {lang}
-                    </span>
-                  ))}
                 </div>
               </div>
             </div>
